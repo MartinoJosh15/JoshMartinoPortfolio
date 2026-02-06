@@ -12,12 +12,13 @@
 </head>
 <body>
 <a class="sr-only" href="#main">Skip to main content</a>
+
 <header>
   <nav aria-label="Primary">
     <div class="wrap">
       <ul>
         <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
+        <li><a href="about.html" aria-current="page">About</a></li>
         <li><a href="projects.html">Projects</a></li>
         <li><a href="activities.html">Activities</a></li>
         <li><a href="contact.html">Contact</a></li>
@@ -25,36 +26,56 @@
     </div>
   </nav>
 </header>
-<main id="main">
 
+<main id="main">
   <div class="wrap">
     <h1>About</h1>
+
     <div class="card">
-      <p>I am an Information Technology major (Robotics minor) focused on reliable infrastructure, clear documentation, and efficient problem‑solving. I work with Linux, networking fundamentals, Python/Java, SQL, and containerized environments.</p>
+      <p>
+        I’m Josh Martino, an Information Technology major with a Robotics minor at James Madison University. I’m most interested in the space where software and systems meet real-world constraints: building reliable environments, automating repetitive work, and making technical setups easy for other people to reproduce.
+      </p>
+      <p>
+        I work primarily in Linux and Python, with experience in networking fundamentals, SQL, and containerized workflows using Docker. In team projects, I usually take ownership of clarity and delivery—tightening documentation, standardizing setup steps, and turning “it works on my machine” into something that works for everyone.
+      </p>
     </div>
+
+    <section class="card" aria-labelledby="focus" style="margin-top:16px">
+      <h2 id="focus">What I’m focused on</h2>
+      <ul>
+        <li><strong>Reliable setups:</strong> Linux-first workflows, clean installs, and repeatable environments.</li>
+        <li><strong>Automation:</strong> Python scripts and tooling that reduce manual effort and prevent mistakes.</li>
+        <li><strong>Documentation:</strong> onboarding guides, troubleshooting steps, and clear handoffs for teams.</li>
+        <li><strong>Systems + robotics support:</strong> practical work that helps hardware/software teams move faster.</li>
+      </ul>
+    </section>
+
     <div class="grid2" style="margin-top:16px">
       <section class="card" aria-labelledby="edu">
         <h2 id="edu">Education</h2>
         <ul>
           <li><strong>James Madison University</strong> — B.S. in Information Technology (Expected May 2027)</li>
-          <li>Minor: Robotics · Major GPA: 3.1</li>
+          <li>Minor: Robotics</li>
+          <li>Major GPA: 3.1</li>
         </ul>
       </section>
+
       <section class="card" aria-labelledby="skills">
         <h2 id="skills">Skills</h2>
-        <p><strong>Frontend:</strong> HTML, CSS, JavaScript</p>
-        <p><strong>Backend:</strong> Python, Java, SQL (PostgreSQL, MySQL), Pandas, NumPy, Git/GitHub, Docker</p>
-        <p><strong>Networking & Systems:</strong> Linux CLI, Wireshark, Networking Fundamentals, Containerization</p>
-        <p><strong>Databases:</strong> ERD Design, Normalization, Query Optimization</p>
-        <p><strong>Tools:</strong> VS Code, GitHub, Matplotlib</p>
+        <p><strong>Programming:</strong> Python, Java, JavaScript</p>
+        <p><strong>Web:</strong> HTML, CSS</p>
+        <p><strong>Data:</strong> SQL (PostgreSQL, MySQL), Pandas, NumPy</p>
+        <p><strong>Systems:</strong> Linux CLI, Docker, Git/GitHub</p>
+        <p><strong>Networking:</strong> Wireshark, TCP/IP fundamentals</p>
+        <p><strong>Tools:</strong> VS Code, Matplotlib</p>
       </section>
     </div>
   </div>
-
 </main>
+
 <footer>
   <div class="wrap">
-    <p>© 2025 Josh Martino · <a href="mailto:marti7jt@dukes.jmu.edu">marti7jt@dukes.jmu.edu</a> · <a href="tel:+14108164518">410‑816‑4518</a> · <a href="https://www.linkedin.com/in/joshua-martino-748078317/" target="_blank" rel="noopener">LinkedIn</a></p>
+    <p>© 2025 Josh Martino · <a href="mailto:marti7jt@dukes.jmu.edu">marti7jt@dukes.jmu.edu</a> · <a href="tel:+14108164518">410-816-4518</a> · <a href="https://www.linkedin.com/in/joshua-martino-748078317/" target="_blank" rel="noopener">LinkedIn</a></p>
   </div>
 </footer>
 </body>
