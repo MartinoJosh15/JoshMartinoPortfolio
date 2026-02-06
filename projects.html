@@ -12,46 +12,124 @@
 </head>
 <body>
 <a class="sr-only" href="#main">Skip to main content</a>
+
 <header>
   <nav aria-label="Primary">
     <div class="wrap">
       <ul>
         <li><a href="index.html">Home</a></li>
         <li><a href="about.html">About</a></li>
-        <li><a href="projects.html">Projects</a></li>
+        <li><a href="projects.html" aria-current="page">Projects</a></li>
         <li><a href="activities.html">Activities</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
     </div>
   </nav>
 </header>
-<main id="main">
 
+<main id="main">
   <div class="wrap">
     <h1>Projects</h1>
-    <section class="card" id="autonomous">
-      <h2>CCI Scholars — Autonomous Golf‑Cart Platform</h2>
+
+    <!-- ===================== -->
+    <!-- Current / Featured -->
+    <!-- ===================== -->
+    <section class="card" id="sentinelnet">
+      <h2>SentinelNet — Enterprise Full-Stack SOC Platform (In Progress)</h2>
+      <p>
+        SentinelNet is an enterprise-level, full-stack Security Operations Center (SOC) platform designed to centralize
+        security visibility, alerting, and response workflows. The infrastructure is built and managed as code using AWS CDK,
+        with API-driven services to support scalable ingestion and automation.
+      </p>
       <ul>
-        <li>Developed and maintained an autonomous platform with ROS2; integrated LiDAR, ZED 2i, and GPS for localization and navigation.</li>
-        <li>Configured and calibrated sensors; performed hardware troubleshooting to ensure reliable data capture.</li>
-        <li>Assessed network vulnerabilities and documented mitigation strategies for embedded systems.</li>
+        <li>Building cloud infrastructure as code with <strong>AWS CDK</strong> to support production-style deployment and repeatability.</li>
+        <li>Developing API-based backend services for ingesting, storing, and querying security-relevant events.</li>
+        <li>Designing the platform with SOC workflows in mind (triage, enrichment, alert routing, and operational visibility).</li>
       </ul>
-      <p><a href="https://ros.org/" target="_blank" rel="noopener">ROS</a> · <a href="https://www.stereolabs.com/zed-2/" target="_blank" rel="noopener">ZED 2</a></p>
+      <p><strong>Tech:</strong> AWS CDK, AWS (cloud services), APIs, full-stack architecture</p>
+      <!-- Optional: add repo/demo link -->
+      <!-- <p><a href="https://github.com/YOUR_USERNAME/sentinelnet" target="_blank" rel="noopener">GitHub Repo</a></p> -->
     </section>
+
+    <!-- ===================== -->
+    <!-- Robotics / CCI Scholars -->
+    <!-- ===================== -->
+    <section class="card" id="autonomous" style="margin-top:16px">
+      <h2>CCI Scholars — Autonomous Golf-Cart Platform</h2>
+      <p>
+        Multi-team robotics program focused on building and maintaining an autonomous golf-cart platform. My work spans
+        ROS2 development, sensor integration, and keeping the system test-ready.
+      </p>
+      <ul>
+        <li>Developed and maintained ROS2-based components supporting localization and navigation.</li>
+        <li>Integrated and validated sensor inputs (LiDAR, ZED 2i stereo camera, GPS) for reliable data capture.</li>
+        <li>Configured/calibrated sensors and resolved hardware + power issues to support field testing.</li>
+      </ul>
+      <p>
+        <strong>Tech:</strong> ROS2, Linux, LiDAR, ZED 2i, GPS, Docker
+        <br>
+        <a href="https://ros.org/" target="_blank" rel="noopener">ROS</a> ·
+        <a href="https://www.stereolabs.com/zed-2/" target="_blank" rel="noopener">ZED 2i</a>
+      </p>
+    </section>
+
+    <!-- ===================== -->
+    <!-- Software / Tools -->
+    <!-- ===================== -->
+    <section class="card" id="dayly" style="margin-top:16px">
+      <h2>DayLy — Personal Productivity Tool (Web + CLI)</h2>
+      <p>
+        A productivity system I’m building to manage tasks and schedules with an automation-friendly workflow and a clean interface.
+      </p>
+      <ul>
+        <li>Designed a consistent data model for tasks/events (due dates, repeats, priorities, categories, and notes).</li>
+        <li>Built CLI-style workflows to create, query, and filter tasks quickly.</li>
+        <li>Focused on predictable behavior and usability to reduce friction during daily use.</li>
+      </ul>
+      <p><strong>Tech:</strong> Python, SQL, API integration</p>
+      <!-- Optional: add your repo/demo link -->
+      <!-- <p><a href="https://github.com/YOUR_USERNAME/dayly" target="_blank" rel="noopener">GitHub Repo</a></p> -->
+    </section>
+
+    <section class="card" id="canvas-cli" style="margin-top:16px">
+      <h2>Canvas + Task Integration CLI (API + Automation)</h2>
+      <p>
+        CLI tooling that pulls coursework/task information through APIs and structures it into a consistent task format for automation.
+      </p>
+      <ul>
+        <li>Worked with REST APIs (Canvas) to retrieve course and assignment data.</li>
+        <li>Normalized due dates and task metadata into a consistent JSON schema for downstream use.</li>
+        <li>Improved reliability through configuration management (environment variables and key handling).</li>
+      </ul>
+      <p><strong>Tech:</strong> Python, REST APIs, JSON, environment configuration</p>
+    </section>
+
+    <!-- ===================== -->
+    <!-- Databases -->
+    <!-- ===================== -->
     <section class="card" id="gamefinder" style="margin-top:16px">
       <h2>GameFinder — PostgreSQL Search Engine</h2>
+      <p>
+        Database design project focused on schema quality, query performance, and maintainable data access patterns.
+      </p>
       <ul>
-        <li>Designed a 10‑table schema with ERDs, constraints, indexes, views, and stored procedures.</li>
-        <li>Optimized queries to improve lookup performance and data access patterns.</li>
+        <li>Designed a 10-table schema with ERDs, constraints, indexes, views, and stored procedures.</li>
+        <li>Optimized queries to improve lookup performance and reduce expensive joins.</li>
+        <li>Applied normalization and indexing strategies aligned with real search patterns.</li>
       </ul>
-      <p><a href="https://www.postgresql.org/" target="_blank" rel="noopener">PostgreSQL</a></p>
+      <p>
+        <strong>Tech:</strong> PostgreSQL, ERD design, indexing, stored procedures
+        <br>
+        <a href="https://www.postgresql.org/" target="_blank" rel="noopener">PostgreSQL</a>
+      </p>
     </section>
-  </div>
 
+  </div>
 </main>
+
 <footer>
   <div class="wrap">
-    <p>© 2025 Josh Martino · <a href="mailto:marti7jt@dukes.jmu.edu">marti7jt@dukes.jmu.edu</a> · <a href="tel:+14108164518">410‑816‑4518</a> · <a href="https://www.linkedin.com/in/joshua-martino-748078317/" target="_blank" rel="noopener">LinkedIn</a></p>
+    <p>© 2025 Josh Martino · <a href="mailto:marti7jt@dukes.jmu.edu">marti7jt@dukes.jmu.edu</a> · <a href="tel:+14108164518">410-816-4518</a> · <a href="https://www.linkedin.com/in/joshua-martino-748078317/" target="_blank" rel="noopener">LinkedIn</a></p>
   </div>
 </footer>
 </body>
