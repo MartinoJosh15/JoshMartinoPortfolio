@@ -3,43 +3,129 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Josh Martino — Home</title>
-<meta name="description" content="Josh Martino - IT portfolio">
+<title>Josh Martino | IT Portfolio</title>
+<meta name="description" content="Josh Martino is an Information Technology student at James Madison University focused on systems, automation, networking, and practical engineering work.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 <a class="sr-only" href="#main">Skip to main content</a>
 <header>
-  <nav aria-label="Primary">
-    <div class="wrap">
+  <div class="wrap site-nav">
+    <a class="brand" href="index.html">Josh Martino</a>
+    <nav aria-label="Primary">
       <ul>
-        <li><a href="index.html">Home</a></li>
+        <li><a href="index.html" aria-current="page">Home</a></li>
         <li><a href="about.html">About</a></li>
         <li><a href="projects.html">Projects</a></li>
         <li><a href="activities.html">Activities</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
-    </div>
-  </nav>
+    </nav>
+  </div>
 </header>
 <main id="main">
+  <div class="wrap">
+    <section class="hero">
+      <div class="hero-copy reveal">
+        <p class="eyebrow">Information Technology Student</p>
+        <h1>Building reliable systems with clear execution.</h1>
+        <p class="lead">I am Josh Martino, an Information Technology major with a Robotics minor at James Madison University. My work centers on infrastructure, automation, technical operations, and software that solves practical problems without unnecessary complexity.</p>
+        <div class="hero-actions">
+          <a class="btn" href="projects.html">View Projects</a>
+          <a class="btn-secondary" href="contact.html">Get In Touch</a>
+        </div>
+      </div>
+      <div class="hero-visual reveal reveal-delay-1">
+        <img src="Profile.png" alt="Portrait of Josh Martino">
+        <div class="hero-note">
+          <strong>Current focus</strong>
+          Building portfolio projects around cloud infrastructure, security workflows, and practical developer tooling.
+        </div>
+      </div>
+    </section>
 
-  <div class="wrap grid2">
-    <div>
-      <h1>Josh Martino</h1>
-      <p>Information Technology student with a Robotics minor at James Madison University. Interests include systems administration, networking, automation, and database design.</p>
-      <p><a class="btn" href="projects.html">View Projects</a> <a class="btn" href="about.html">About</a></p>
-    </div>
-    <div class="card"><img src="Profile.png" alt="Headshot of Josh Martino"></div>
+    <section class="stats">
+      <article class="stat reveal reveal-delay-1">
+        <strong>2027</strong>
+        <span>Expected graduation from James Madison University</span>
+      </article>
+      <article class="stat reveal reveal-delay-2">
+        <strong>5+</strong>
+        <span>Portfolio projects across systems, robotics, databases, and automation</span>
+      </article>
+      <article class="stat reveal reveal-delay-3">
+        <strong>Core</strong>
+        <span>Linux, Python, SQL, networking, Docker, and API-driven workflows</span>
+      </article>
+    </section>
+
+    <section>
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">What I Do</p>
+          <h2>Technical work with an operations mindset</h2>
+        </div>
+      </div>
+      <div class="grid-3">
+        <article class="card reveal">
+          <h3>Systems and Infrastructure</h3>
+          <p>I care about repeatable environments, clean deployment processes, and setups that are maintainable after the first demo.</p>
+        </article>
+        <article class="card reveal reveal-delay-1">
+          <h3>Automation and Tooling</h3>
+          <p>I build scripts and utilities that remove manual work, improve consistency, and make workflows easier to trust.</p>
+        </article>
+        <article class="card reveal reveal-delay-2">
+          <h3>Applied Software Projects</h3>
+          <p>I like projects where backend logic, data structure, and real operational needs have to work together.</p>
+        </article>
+      </div>
+    </section>
+
+    <section>
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">Featured Work</p>
+          <h2>Projects that reflect how I build</h2>
+        </div>
+        <a class="btn-secondary" href="projects.html">See All Projects</a>
+      </div>
+      <div class="project-grid">
+        <article class="project-card reveal">
+          <p class="kicker">Cloud Security Platform</p>
+          <h3>SentinelNet</h3>
+          <p>Enterprise-style SOC platform built to centralize event visibility, backend services, and cloud-managed infrastructure.</p>
+          <div class="tag-row">
+            <span class="tag">AWS CDK</span>
+            <span class="tag">APIs</span>
+            <span class="tag">Infrastructure as Code</span>
+          </div>
+        </article>
+        <article class="project-card reveal reveal-delay-1">
+          <p class="kicker">Robotics Support</p>
+          <h3>Autonomous Golf Cart Platform</h3>
+          <p>ROS2-based work across localization, sensor integration, calibration, and field-readiness for a multi-team robotics program.</p>
+          <div class="tag-row">
+            <span class="tag">ROS2</span>
+            <span class="tag">Linux</span>
+            <span class="tag">Sensor Integration</span>
+          </div>
+        </article>
+      </div>
+    </section>
   </div>
-
 </main>
 <footer>
-  <div class="wrap">
-    <p>© 2025 Josh Martino · <a href="mailto:marti7jt@dukes.jmu.edu">marti7jt@dukes.jmu.edu</a> · <a href="tel:+14108164518">410‑816‑4518</a> · <a href="https://www.linkedin.com/in/joshua-martino-748078317/" target="_blank" rel="noopener">LinkedIn</a></p>
+  <div class="wrap footer-content">
+    <p>&copy; 2026 Josh Martino</p>
+    <div class="footer-links">
+      <a href="mailto:marti7jt@dukes.jmu.edu">marti7jt@dukes.jmu.edu</a>
+      <a href="tel:+14108164518">410-816-4518</a>
+      <a href="https://www.linkedin.com/in/joshua-martino-748078317/" target="_blank" rel="noopener">LinkedIn</a>
+    </div>
   </div>
 </footer>
 </body>

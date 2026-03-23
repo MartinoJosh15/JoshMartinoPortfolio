@@ -3,19 +3,19 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Projects — Josh Martino</title>
-<meta name="description" content="Josh Martino - IT portfolio">
+<title>Projects | Josh Martino</title>
+<meta name="description" content="Selected projects by Josh Martino across cloud infrastructure, robotics, automation, and database systems.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 <a class="sr-only" href="#main">Skip to main content</a>
-
 <header>
-  <nav aria-label="Primary">
-    <div class="wrap">
+  <div class="wrap site-nav">
+    <a class="brand" href="index.html">Josh Martino</a>
+    <nav aria-label="Primary">
       <ul>
         <li><a href="index.html">Home</a></li>
         <li><a href="about.html">About</a></li>
@@ -23,113 +23,115 @@
         <li><a href="activities.html">Activities</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
-    </div>
-  </nav>
+    </nav>
+  </div>
 </header>
-
 <main id="main">
   <div class="wrap">
-    <h1>Projects</h1>
-
-    <!-- ===================== -->
-    <!-- Current / Featured -->
-    <!-- ===================== -->
-    <section class="card" id="sentinelnet">
-      <h2>SentinelNet — Enterprise Full-Stack SOC Platform (In Progress)</h2>
-      <p>
-        SentinelNet is an enterprise-level, full-stack Security Operations Center (SOC) platform designed to centralize
-        security visibility, alerting, and response workflows. The infrastructure is built and managed as code using AWS CDK,
-        with API-driven services to support scalable ingestion and automation.
-      </p>
-      <ul>
-        <li>Building cloud infrastructure as code with <strong>AWS CDK</strong> to support production-style deployment and repeatability.</li>
-        <li>Developing API-based backend services for ingesting, storing, and querying security-relevant events.</li>
-        <li>Designing the platform with SOC workflows in mind (triage, enrichment, alert routing, and operational visibility).</li>
-      </ul>
-      <p><strong>Tech:</strong> AWS CDK, AWS (cloud services), APIs, full-stack architecture</p>
-      <!-- Optional: add repo/demo link -->
-      <!-- <p><a href="https://github.com/YOUR_USERNAME/sentinelnet" target="_blank" rel="noopener">GitHub Repo</a></p> -->
+    <section class="panel reveal">
+      <p class="eyebrow">Selected Projects</p>
+      <h1>Technical work across infrastructure, robotics, and automation.</h1>
+      <p class="lead">These projects reflect the kind of work I want to keep doing: systems that are practical, structured, and grounded in real implementation details.</p>
     </section>
 
-    <!-- ===================== -->
-    <!-- Robotics / CCI Scholars -->
-    <!-- ===================== -->
-    <section class="card" id="autonomous" style="margin-top:16px">
-      <h2>CCI Scholars — Autonomous Golf-Cart Platform</h2>
-      <p>
-        Multi-team robotics program focused on building and maintaining an autonomous golf-cart platform. My work spans
-        ROS2 development, sensor integration, and keeping the system test-ready.
-      </p>
-      <ul>
-        <li>Developed and maintained ROS2-based components supporting localization and navigation.</li>
-        <li>Integrated and validated sensor inputs (LiDAR, ZED 2i stereo camera, GPS) for reliable data capture.</li>
-        <li>Configured/calibrated sensors and resolved hardware + power issues to support field testing.</li>
-      </ul>
-      <p>
-        <strong>Tech:</strong> ROS2, Linux, LiDAR, ZED 2i, GPS, Docker
-        <br>
-        <a href="https://ros.org/" target="_blank" rel="noopener">ROS</a> ·
-        <a href="https://www.stereolabs.com/zed-2/" target="_blank" rel="noopener">ZED 2i</a>
-      </p>
-    </section>
+    <section class="project-grid">
+      <article class="project-card reveal">
+        <p class="kicker">Featured Project</p>
+        <h2>SentinelNet</h2>
+        <p class="meta">Enterprise full-stack SOC platform in progress</p>
+        <p>SentinelNet is an enterprise-style security operations platform designed to centralize security visibility, alerting, and response workflows. The platform is being built with an emphasis on repeatable cloud infrastructure and scalable backend services.</p>
+        <div class="tag-row">
+          <span class="tag">AWS CDK</span>
+          <span class="tag">Cloud Services</span>
+          <span class="tag">APIs</span>
+          <span class="tag">Full-Stack Architecture</span>
+        </div>
+        <ul class="feature-list">
+          <li>Building infrastructure as code to support consistent deployment and environment management.</li>
+          <li>Developing backend services for ingesting, storing, and querying security-relevant events.</li>
+          <li>Designing around SOC workflows such as triage, enrichment, alert routing, and operational visibility.</li>
+        </ul>
+      </article>
 
-    <!-- ===================== -->
-    <!-- Software / Tools -->
-    <!-- ===================== -->
-    <section class="card" id="dayly" style="margin-top:16px">
-      <h2>DayLy — Personal Productivity Tool (Web + CLI)</h2>
-      <p>
-        A productivity system I’m building to manage tasks and schedules with an automation-friendly workflow and a clean interface.
-      </p>
-      <ul>
-        <li>Designed a consistent data model for tasks/events (due dates, repeats, priorities, categories, and notes).</li>
-        <li>Built CLI-style workflows to create, query, and filter tasks quickly.</li>
-        <li>Focused on predictable behavior and usability to reduce friction during daily use.</li>
-      </ul>
-      <p><strong>Tech:</strong> Python, SQL, API integration</p>
-      <!-- Optional: add your repo/demo link -->
-      <!-- <p><a href="https://github.com/YOUR_USERNAME/dayly" target="_blank" rel="noopener">GitHub Repo</a></p> -->
-    </section>
+      <article class="project-card reveal reveal-delay-1">
+        <p class="kicker">Robotics Systems</p>
+        <h2>CCI Scholars Autonomous Golf Cart Platform</h2>
+        <p>Multi-team robotics effort focused on building and maintaining an autonomous golf cart platform. My role has centered on ROS2-based development, sensor integration, and keeping the system test-ready during field work.</p>
+        <div class="tag-row">
+          <span class="tag">ROS2</span>
+          <span class="tag">Linux</span>
+          <span class="tag">LiDAR</span>
+          <span class="tag">ZED 2i</span>
+          <span class="tag">GPS</span>
+          <span class="tag">Docker</span>
+        </div>
+        <ul class="feature-list">
+          <li>Maintained ROS2 components supporting localization and navigation workflows.</li>
+          <li>Integrated and validated sensor inputs for reliable environmental data collection.</li>
+          <li>Configured hardware, calibrated sensors, and resolved power issues to support live testing.</li>
+        </ul>
+      </article>
 
-    <section class="card" id="canvas-cli" style="margin-top:16px">
-      <h2>Canvas + Task Integration CLI (API + Automation)</h2>
-      <p>
-        CLI tooling that pulls coursework/task information through APIs and structures it into a consistent task format for automation.
-      </p>
-      <ul>
-        <li>Worked with REST APIs (Canvas) to retrieve course and assignment data.</li>
-        <li>Normalized due dates and task metadata into a consistent JSON schema for downstream use.</li>
-        <li>Improved reliability through configuration management (environment variables and key handling).</li>
-      </ul>
-      <p><strong>Tech:</strong> Python, REST APIs, JSON, environment configuration</p>
-    </section>
+      <article class="project-card reveal reveal-delay-2">
+        <p class="kicker">Productivity Tooling</p>
+        <h2>DayLy</h2>
+        <p>Personal productivity system built around predictable task and schedule management with both web and CLI-oriented workflows.</p>
+        <div class="tag-row">
+          <span class="tag">Python</span>
+          <span class="tag">SQL</span>
+          <span class="tag">Workflow Design</span>
+        </div>
+        <ul class="feature-list">
+          <li>Designed a data model for tasks and events with repeat rules, priorities, categories, and notes.</li>
+          <li>Built command-line workflows for creating, filtering, and reviewing tasks quickly.</li>
+          <li>Focused on reducing friction through consistent behavior and clear task structure.</li>
+        </ul>
+      </article>
 
-    <!-- ===================== -->
-    <!-- Databases -->
-    <!-- ===================== -->
-    <section class="card" id="gamefinder" style="margin-top:16px">
-      <h2>GameFinder — PostgreSQL Search Engine</h2>
-      <p>
-        Database design project focused on schema quality, query performance, and maintainable data access patterns.
-      </p>
-      <ul>
-        <li>Designed a 10-table schema with ERDs, constraints, indexes, views, and stored procedures.</li>
-        <li>Optimized queries to improve lookup performance and reduce expensive joins.</li>
-        <li>Applied normalization and indexing strategies aligned with real search patterns.</li>
-      </ul>
-      <p>
-        <strong>Tech:</strong> PostgreSQL, ERD design, indexing, stored procedures
-        <br>
-        <a href="https://www.postgresql.org/" target="_blank" rel="noopener">PostgreSQL</a>
-      </p>
-    </section>
+      <article class="project-card reveal">
+        <p class="kicker">API Automation</p>
+        <h2>Canvas Task Integration CLI</h2>
+        <p>Automation tooling that pulls coursework and assignment information from APIs and transforms it into a consistent structure for downstream task management.</p>
+        <div class="tag-row">
+          <span class="tag">Python</span>
+          <span class="tag">REST APIs</span>
+          <span class="tag">JSON</span>
+          <span class="tag">Environment Management</span>
+        </div>
+        <ul class="feature-list">
+          <li>Retrieved course and assignment data through the Canvas API.</li>
+          <li>Normalized due dates and metadata into a predictable JSON schema.</li>
+          <li>Improved reliability through clean configuration and secret handling practices.</li>
+        </ul>
+      </article>
 
+      <article class="project-card reveal reveal-delay-1">
+        <p class="kicker">Database Design</p>
+        <h2>GameFinder</h2>
+        <p>Database project centered on schema quality, query performance, and maintainable data access patterns for search-oriented use cases.</p>
+        <div class="tag-row">
+          <span class="tag">PostgreSQL</span>
+          <span class="tag">ERD Design</span>
+          <span class="tag">Stored Procedures</span>
+          <span class="tag">Indexing</span>
+        </div>
+        <ul class="feature-list">
+          <li>Designed a 10-table schema with constraints, indexes, views, and stored procedures.</li>
+          <li>Improved lookup performance by reducing expensive joins and structuring queries more effectively.</li>
+          <li>Applied normalization and indexing strategies based on expected search patterns.</li>
+        </ul>
+      </article>
+    </section>
   </div>
 </main>
-
 <footer>
-  <div class="wrap">
-    <p>© 2025 Josh Martino · <a href="mailto:marti7jt@dukes.jmu.edu">marti7jt@dukes.jmu.edu</a> · <a href="tel:+14108164518">410-816-4518</a> · <a href="https://www.linkedin.com/in/joshua-martino-748078317/" target="_blank" rel="noopener">LinkedIn</a></p>
+  <div class="wrap footer-content">
+    <p>&copy; 2026 Josh Martino</p>
+    <div class="footer-links">
+      <a href="mailto:marti7jt@dukes.jmu.edu">marti7jt@dukes.jmu.edu</a>
+      <a href="tel:+14108164518">410-816-4518</a>
+      <a href="https://www.linkedin.com/in/joshua-martino-748078317/" target="_blank" rel="noopener">LinkedIn</a>
+    </div>
   </div>
 </footer>
 </body>

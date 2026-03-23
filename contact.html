@@ -3,61 +3,90 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Contact — Josh Martino</title>
-<meta name="description" content="Josh Martino - IT portfolio">
+<title>Contact | Josh Martino</title>
+<meta name="description" content="Contact Josh Martino for internship opportunities, technical collaboration, and project discussions.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 <a class="sr-only" href="#main">Skip to main content</a>
 <header>
-  <nav aria-label="Primary">
-    <div class="wrap">
+  <div class="wrap site-nav">
+    <a class="brand" href="index.html">Josh Martino</a>
+    <nav aria-label="Primary">
       <ul>
         <li><a href="index.html">Home</a></li>
         <li><a href="about.html">About</a></li>
         <li><a href="projects.html">Projects</a></li>
         <li><a href="activities.html">Activities</a></li>
-        <li><a href="contact.html">Contact</a></li>
+        <li><a href="contact.html" aria-current="page">Contact</a></li>
       </ul>
-    </div>
-  </nav>
+    </nav>
+  </div>
 </header>
 <main id="main">
-
   <div class="wrap">
-    <h1>Contact</h1>
-    <section class="card">
-      <form action="mailto:marti7jt@dukes.jmu.edu" method="post" enctype="text/plain">
-        <label for="name">Name</label>
-        <input id="name" name="name" type="text" required>
+    <section class="contact-grid">
+      <article class="panel reveal">
+        <p class="eyebrow">Contact</p>
+        <h1>Open to internships, collaboration, and technical conversations.</h1>
+        <p class="lead">Use the form to reach out directly. Messages are sent through Formspree, so the form works on static hosting without requiring a custom backend.</p>
+        <div class="contact-list">
+          <a class="contact-link" href="mailto:marti7jt@dukes.jmu.edu">
+            <strong>Email</strong><br>
+            marti7jt@dukes.jmu.edu
+          </a>
+          <a class="contact-link" href="tel:+14108164518">
+            <strong>Phone</strong><br>
+            410-816-4518
+          </a>
+          <a class="contact-link" href="https://www.linkedin.com/in/joshua-martino-748078317/" target="_blank" rel="noopener">
+            <strong>LinkedIn</strong><br>
+            Connect professionally
+          </a>
+        </div>
+      </article>
 
-        <label for="email">Email</label>
-        <input id="email" name="email" type="email" required>
+      <article class="contact-card reveal reveal-delay-1">
+        <h2>Send a message</h2>
+        <form action="https://formspree.io/f/xpqygvoa" method="POST">
+          <input type="hidden" name="_subject" value="New portfolio contact submission">
 
-        <label for="reason">Reason</label>
-        <select id="reason" name="reason" required>
-          <option value="">Select one</option>
-          <option>Internship</option>
-          <option>Project collaboration</option>
-          <option>Other</option>
-        </select>
+          <label for="name">Name</label>
+          <input id="name" name="name" type="text" autocomplete="name" required>
 
-        <label for="message">Message</label>
-        <textarea id="message" name="message" minlength="10" required></textarea>
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" autocomplete="email" required>
 
-        <button type="submit" class="btn">Send</button>
-      </form>
-      <p style="margin-top:8px" class="muted">Note: This uses your email client (mailto) so it works on static hosting without a backend.</p>
+          <label for="reason">Reason</label>
+          <select id="reason" name="reason" required>
+            <option value="">Select one</option>
+            <option value="Internship">Internship</option>
+            <option value="Project collaboration">Project collaboration</option>
+            <option value="Networking">Networking</option>
+            <option value="Other">Other</option>
+          </select>
+
+          <label for="message">Message</label>
+          <textarea id="message" name="message" minlength="10" required></textarea>
+
+          <button type="submit" class="btn">Send Message</button>
+        </form>
+        <p class="muted">If the form is blocked by a browser extension, email is the fallback.</p>
+      </article>
     </section>
   </div>
-
 </main>
 <footer>
-  <div class="wrap">
-    <p>© 2025 Josh Martino · <a href="mailto:marti7jt@dukes.jmu.edu">marti7jt@dukes.jmu.edu</a> · <a href="tel:+14108164518">410‑816‑4518</a> · <a href="https://www.linkedin.com/in/joshua-martino-748078317/" target="_blank" rel="noopener">LinkedIn</a></p>
+  <div class="wrap footer-content">
+    <p>&copy; 2026 Josh Martino</p>
+    <div class="footer-links">
+      <a href="mailto:marti7jt@dukes.jmu.edu">marti7jt@dukes.jmu.edu</a>
+      <a href="tel:+14108164518">410-816-4518</a>
+      <a href="https://www.linkedin.com/in/joshua-martino-748078317/" target="_blank" rel="noopener">LinkedIn</a>
+    </div>
   </div>
 </footer>
 </body>
