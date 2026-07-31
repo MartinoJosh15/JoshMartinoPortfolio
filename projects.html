@@ -3,19 +3,20 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Projects | Josh Martino</title>
-<meta name="description" content="Selected software engineering projects by Josh Martino across security tooling, full-stack development, robotics, APIs, and data-driven applications.">
+<title>AI &amp; Engineering Projects | Josh Martino</title>
+<meta name="description" content="AI and machine learning projects by Josh Martino, including a GPT-2 reimplementation, autonomous-vehicle anomaly detection, a backpropagation engine, and production-minded software systems.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="styles.css">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Plus+Jakarta+Sans:wght@400;500;700;800&family=Sora:wght@600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles-v2.css">
 </head>
 <body>
 <a class="sr-only" href="#main">Skip to main content</a>
 <header>
   <div class="wrap site-nav">
     <a class="brand" href="index.html">Josh Martino</a>
-    <nav aria-label="Primary">
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-nav">Menu</button>
+    <nav id="primary-nav" aria-label="Primary">
       <ul>
         <li><a href="index.html">Home</a></li>
         <li><a href="about.html">About</a></li>
@@ -28,155 +29,159 @@
 </header>
 <main id="main">
   <div class="wrap">
-    <section class="panel reveal">
-      <p class="eyebrow">Selected Projects</p>
-      <h1>Projects spanning security workflows, full-stack apps, robotics, and data systems.</h1>
-      <p class="lead">My project work is strongest when the implementation has to hold up beyond a demo. I am particularly interested in backend systems, full-stack product development, security-oriented software, and practical technical work that improves visibility, automation, and system behavior.</p>
+    <section class="page-hero">
+      <article class="page-hero-copy panel reveal">
+        <p class="eyebrow">AI + Engineering Work</p>
+        <h1>From neural-network mechanics to applied AI systems.</h1>
+        <p class="lead">My strongest work follows a clear progression: understand the mathematics, implement modern architectures, optimize training, and connect models to real systems. The supporting software projects show that I can also build the infrastructure and product experiences around AI.</p>
+      </article>
+
+      <article class="sidebar-card reveal reveal-delay-1">
+        <p class="eyebrow">The Throughline</p>
+        <ul>
+          <li>Core ML concepts implemented from scratch to build real understanding.</li>
+          <li>Transformer architecture and training decisions expressed directly in PyTorch.</li>
+          <li>Applied AI connected to live autonomous-vehicle telemetry.</li>
+          <li>Backend, cloud, and product skills that support end-to-end delivery.</li>
+        </ul>
+      </article>
+    </section>
+
+    <section id="ai-work">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">Primary AI Work</p>
+          <h2>Learning the foundations, then applying them</h2>
+        </div>
+      </div>
+
+      <div class="project-grid primary">
+        <article class="project-card case-study dark reveal">
+          <div class="case-study-main">
+            <span class="badge">Transformer Engineering</span>
+            <h3>GPT-2 Reimplementation and Training Optimization</h3>
+            <p class="meta">Machine Learning Engineer</p>
+            <p>Reimplemented the GPT-2 transformer architecture in PyTorch to understand how modern language models are assembled and trained, from token representation through autoregressive generation.</p>
+            <div class="tag-row">
+              <span class="tag">PyTorch</span>
+              <span class="tag">Transformers</span>
+              <span class="tag">NLP</span>
+              <span class="tag">Model Training</span>
+            </div>
+          </div>
+          <div class="case-study-details">
+            <p class="eyebrow">Implementation notes</p>
+            <ul>
+              <li>Implemented token and positional embeddings, multi-head causal self-attention, transformer blocks, weight tying, and autoregressive text generation.</li>
+              <li>Built an efficient data-loading and training pipeline with mixed-precision training and gradient accumulation.</li>
+              <li>Added learning-rate scheduling and gradient clipping to improve training stability and model performance.</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="project-card case-study reveal reveal-delay-1">
+          <div class="case-study-main">
+            <span class="badge">Applied AI + Robotics</span>
+            <h3>JACart AI Anomaly Detection</h3>
+            <p class="meta">Research Scholar and Project Manager</p>
+            <p>Developed and trained an AI-powered anomaly detection system for the JACart autonomous vehicle, turning ROS 2 sensor and localization data into operational insight.</p>
+            <div class="tag-row">
+              <span class="tag">ROS 2</span>
+              <span class="tag">Anomaly Detection</span>
+              <span class="tag">Ollama</span>
+              <span class="tag">Autonomous Vehicles</span>
+            </div>
+          </div>
+          <div class="case-study-details">
+            <p class="eyebrow">Research impact</p>
+            <ul>
+              <li>Integrated live sensor and localization telemetry to identify system faults and operational irregularities in real time.</li>
+              <li>Connected the workflow to a locally served Gemma model through Ollama for on-system AI analysis.</li>
+              <li>Iterated through incremental testing, feedback, and refinement in an Agile research environment.</li>
+              <li>Coordinates subteams, milestones, documentation, and onboarding as Project Manager for the autonomous-vehicle research team.</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="project-card case-study reveal reveal-delay-2">
+          <div class="case-study-main">
+            <span class="badge">ML Fundamentals</span>
+            <h3>Backpropagation and Neural Network Engine</h3>
+            <p class="meta">From-scratch machine learning implementation</p>
+            <p>Built a script that can backpropagate through mathematical expressions, then used the resulting gradient engine to train a neural network.</p>
+            <div class="tag-row">
+              <span class="tag">Backpropagation</span>
+              <span class="tag">Automatic Differentiation</span>
+              <span class="tag">Neural Networks</span>
+              <span class="tag">ML Foundations</span>
+            </div>
+          </div>
+          <div class="case-study-details">
+            <p class="eyebrow">What I learned</p>
+            <ul>
+              <li>Represented mathematical operations in a form that supports forward evaluation and reverse-mode gradient propagation.</li>
+              <li>Used the engine to connect derivatives, parameter gradients, and optimization to a working neural-network training process.</li>
+              <li>Built the project to strengthen my understanding of what machine learning frameworks automate beneath their APIs.</li>
+            </ul>
+          </div>
+        </article>
+      </div>
     </section>
 
     <section>
       <div class="section-heading">
         <div>
-          <p class="eyebrow">Primary Work</p>
-          <h2>Projects most aligned with my internship focus</h2>
+          <p class="eyebrow">Supporting Engineering Work</p>
+          <h2>Backend, cloud, and product systems that strengthen my AI foundation</h2>
         </div>
       </div>
-      <div class="project-grid">
+
+      <div class="project-grid secondary">
         <article class="project-card reveal">
-          <p class="kicker">Security Tooling</p>
-          <h2>SentinelNet</h2>
-          <p class="meta">Backend Engineer</p>
-          <p>SOC-style dashboard for security event triage with a backend ingestion pipeline designed to normalize alerts, preserve raw records, and support operational analysis.</p>
+          <span class="badge">Security + Cloud</span>
+          <h3>SentinelNet</h3>
+          <p>Engineered a Wazuh alert-ingestion pipeline that sends security telemetry through SQS, processes it with Python Lambda, and stores normalized records in DynamoDB.</p>
           <div class="tag-row">
             <span class="tag">Python Lambda</span>
+            <span class="tag">AWS CDK</span>
             <span class="tag">SQS</span>
             <span class="tag">DynamoDB</span>
-            <span class="tag">AWS CDK</span>
-            <span class="tag">Wazuh</span>
           </div>
-          <ul class="feature-list">
-            <li>Built a Wazuh-style alert ingestion pipeline: alerts to SQS with DLQ and redrive, then into a Python Lambda and telemetry DynamoDB table.</li>
-            <li>Used DynamoDB protections including SSE-KMS, point-in-time recovery, and TTL to support secure and maintainable storage.</li>
-            <li>Wrote the Lambda to clean and standardize incoming alerts while preserving the original raw alert for traceability.</li>
+          <ul>
+            <li>Validated the pipeline against hundreds of alerts in dedicated machine testing.</li>
+            <li>Automated secure, scalable infrastructure provisioning with AWS CDK in Python.</li>
           </ul>
         </article>
 
         <article class="project-card reveal reveal-delay-1">
-          <p class="kicker">Full-Stack Application</p>
-          <h2>DayLy</h2>
-          <p class="meta">Creator</p>
-          <p>Production-style scheduling and task management platform built to support calendar planning, recurring events, filtering, and polished day-to-day workflow management.</p>
+          <span class="badge">Full-Stack Product</span>
+          <h3>DayLy</h3>
+          <p>Built a full-stack planner ecosystem with calendar scheduling, recurring events, Kanban workflows, Python-powered coursework imports, and persistent data syncing.</p>
           <div class="tag-row">
             <span class="tag">React</span>
-            <span class="tag">Vite</span>
-            <span class="tag">FullCalendar</span>
-            <span class="tag">UI Design</span>
-          </div>
-          <ul class="feature-list">
-            <li>Built month and week calendar views with support for timed and all-day tasks.</li>
-            <li>Implemented recurring events with RRULE, priority and category filtering, and real-time task management.</li>
-            <li>Designed for usability and polish with dark mode theming and a professional full-stack application feel.</li>
-          </ul>
-        </article>
-
-        <article class="project-card reveal reveal-delay-2">
-          <p class="kicker">Product and Systems Design</p>
-          <h2>JMU Lifts</h2>
-          <p class="meta">Team Member</p>
-          <p>Campus ride-matching platform built to support secure student onboarding, persistent account management, and a more credible foundation for matching riders and drivers around real university use cases.</p>
-          <div class="tag-row">
-            <span class="tag">Backend Logic</span>
-            <span class="tag">Firebase Authentication</span>
-            <span class="tag">Database Integration</span>
-            <span class="tag">Access Control</span>
-          </div>
-          <ul class="feature-list">
-            <li>Engineered the authentication system using backend logic and Firebase Authentication to support secure student account creation.</li>
-            <li>Enforced student-only access through JMU email domain validation and verification-based sign-up using .edu addresses.</li>
-            <li>Integrated email verification and database-backed account persistence to create a smoother one-time registration experience across devices.</li>
-            <li>Helped move JMU Lifts from an early concept into a functional platform by implementing core identity and access infrastructure.</li>
-          </ul>
-        </article>
-      </div>
-    </section>
-
-    <section>
-      <div class="section-heading">
-        <div>
-          <p class="eyebrow">Additional Projects</p>
-          <h2>Supporting work across robotics, APIs, and databases</h2>
-        </div>
-      </div>
-      <div class="project-grid">
-        <article class="project-card reveal">
-          <p class="kicker">Research Systems</p>
-          <h2>Autonomous Golf Cart Platform</h2>
-          <p>Research and engineering work on an autonomous vehicle platform, with focus on ROS2 development, sensor integration, and operational visibility during testing.</p>
-          <div class="tag-row">
-            <span class="tag">ROS2</span>
-            <span class="tag">Linux</span>
-            <span class="tag">LiDAR</span>
-            <span class="tag">ZED 2i</span>
-            <span class="tag">GPS</span>
-            <span class="tag">Docker</span>
-          </div>
-          <ul class="feature-list">
-            <li>Developed and maintained components supporting localization and navigation on an autonomous golf cart platform.</li>
-            <li>Integrated and validated sensor inputs for real-time data collection and system awareness.</li>
-            <li>Built backend terminal tooling inside Docker to monitor process state and overall system behavior.</li>
-          </ul>
-        </article>
-
-        <article class="project-card reveal reveal-delay-1">
-          <p class="kicker">Web Platform</p>
-          <h2>Madison AI Club Website and Committee Communication Platform</h2>
-          <p>Club web platform designed to improve member communication, committee coordination, and the overall digital presence of the Madison AI Club.</p>
-          <div class="tag-row">
-            <span class="tag">Web Development</span>
-            <span class="tag">AWS</span>
-            <span class="tag">Team Leadership</span>
-            <span class="tag">Communication Features</span>
-          </div>
-          <ul class="feature-list">
-            <li>Led the Web Development Team as Committee Head, helping oversee the design and development of the club website.</li>
-            <li>Implemented committee-based group messaging features to improve communication, coordination, and workflow across club teams.</li>
-            <li>Used AWS cloud services to support hosting, deployment, and scalable website infrastructure.</li>
-            <li>Helped create a more organized digital platform for members to stay informed about updates, events, and committee activity.</li>
-            <li>Collaborated with teammates to build a more professional web presence that strengthened club engagement and internal communication.</li>
-          </ul>
-        </article>
-
-        <article class="project-card reveal reveal-delay-1">
-          <p class="kicker">API Automation</p>
-          <h2>Canvas Task Integration CLI</h2>
-          <p>Automation tooling that pulls coursework and assignment information from APIs and converts it into a consistent structure for downstream task management and planning.</p>
-          <div class="tag-row">
+            <span class="tag">Supabase</span>
             <span class="tag">Python</span>
-            <span class="tag">REST APIs</span>
-            <span class="tag">JSON</span>
-            <span class="tag">Environment Management</span>
+            <span class="tag">FullCalendar</span>
           </div>
-          <ul class="feature-list">
-            <li>Retrieved course and assignment data through the Canvas API.</li>
-            <li>Normalized due dates and task metadata into a predictable JSON schema.</li>
-            <li>Improved reliability through cleaner configuration handling and automation-friendly data output.</li>
+          <ul>
+            <li>Created day, week, and month planning views with drag-and-drop rescheduling and task editing.</li>
+            <li>Developed logic that turns open tasks into scheduled work blocks based on priority and availability.</li>
           </ul>
         </article>
 
         <article class="project-card reveal reveal-delay-2">
-          <p class="kicker">Database Design</p>
-          <h2>GameFinder</h2>
-          <p>Database project centered on schema quality, query performance, and maintainable search-oriented data access patterns.</p>
+          <span class="badge">Identity + Access</span>
+          <h3>JMU Lifts</h3>
+          <p>Co-founded a campus ride platform and implemented its authentication backbone, student-only access controls, verification flow, and persistent account infrastructure.</p>
           <div class="tag-row">
-            <span class="tag">PostgreSQL</span>
-            <span class="tag">ERD Design</span>
-            <span class="tag">Stored Procedures</span>
-            <span class="tag">Indexing</span>
+            <span class="tag">Firebase Auth</span>
+            <span class="tag">Backend Logic</span>
+            <span class="tag">Access Control</span>
+            <span class="tag">Database Integration</span>
           </div>
-          <ul class="feature-list">
-            <li>Designed a 10-table schema with constraints, indexes, views, and stored procedures.</li>
-            <li>Improved lookup performance by reducing expensive joins and structuring queries more effectively.</li>
-            <li>Applied normalization and indexing strategies based on realistic search patterns.</li>
+          <ul>
+            <li>Enforced JMU email-domain validation and verification-based sign-up.</li>
+            <li>Added database-backed account persistence for one-time registration across devices.</li>
           </ul>
         </article>
       </div>
@@ -189,9 +194,11 @@
     <div class="footer-links">
       <a href="mailto:marti7jt@dukes.jmu.edu">marti7jt@dukes.jmu.edu</a>
       <a href="tel:+14108164518">410-816-4518</a>
+      <a href="https://github.com/MartinoJosh15" target="_blank" rel="noopener">GitHub</a>
       <a href="https://www.linkedin.com/in/joshua-martino-748078317/" target="_blank" rel="noopener">LinkedIn</a>
     </div>
   </div>
 </footer>
+<script src="script.js"></script>
 </body>
 </html>

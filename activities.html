@@ -4,18 +4,19 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Activities | Josh Martino</title>
-<meta name="description" content="Experience, leadership, and campus involvement for Josh Martino across research, teaching, and technical organizations.">
+<meta name="description" content="Josh Martino's experience across AI research, autonomous vehicles, teaching, and technical leadership at James Madison University.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="styles.css">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Plus+Jakarta+Sans:wght@400;500;700;800&family=Sora:wght@600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles-v2.css">
 </head>
 <body>
 <a class="sr-only" href="#main">Skip to main content</a>
 <header>
   <div class="wrap site-nav">
     <a class="brand" href="index.html">Josh Martino</a>
-    <nav aria-label="Primary">
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-nav">Menu</button>
+    <nav id="primary-nav" aria-label="Primary">
       <ul>
         <li><a href="index.html">Home</a></li>
         <li><a href="about.html">About</a></li>
@@ -28,32 +29,45 @@
 </header>
 <main id="main">
   <div class="wrap">
-    <section class="panel reveal">
-      <p class="eyebrow">Experience and Leadership</p>
-      <h1>Research, teaching, and technical involvement beyond coursework.</h1>
-      <p class="lead">My experience includes research engineering work, teaching support, and leadership in student technology organizations. Those roles have strengthened both my technical execution and how I work with teams.</p>
+    <section class="page-hero">
+      <article class="page-hero-copy panel reveal">
+        <p class="eyebrow">Experience and Leadership</p>
+        <h1>AI research, autonomous systems, teaching, and technical leadership.</h1>
+        <p class="lead">My experience combines hands-on AI engineering with the teamwork required to operate a complex autonomous-vehicle research platform. Teaching and campus leadership have strengthened how I explain technical ideas and help teams execute.</p>
+      </article>
+
+      <article class="sidebar-card reveal reveal-delay-1">
+        <p class="eyebrow">Themes</p>
+        <ul>
+          <li>Connecting machine learning to real sensor and localization data.</li>
+          <li>Leading research workflows while remaining hands-on with implementation.</li>
+          <li>Explaining complex technical ideas through teaching and team documentation.</li>
+        </ul>
+      </article>
     </section>
 
     <section class="timeline">
       <article class="timeline-item reveal">
         <div class="timeline-date">June 2025 - Present</div>
-        <div>
-          <h2>Research Scholar, CCI Scholars</h2>
-          <p class="meta">James Madison University, Harrisonburg, Virginia</p>
-          <ul class="feature-list">
-            <li>Developed and maintained an autonomous golf-cart platform using ROS2, LiDAR, ZED 2i stereo cameras, and GPS for real-time localization and navigation.</li>
-            <li>Designed and implemented a backend terminal interface inside a Docker container to monitor process status and overall system behavior in real time.</li>
-            <li>Applied Agile development practices in a team-based research environment through iterative testing, feedback, and refinement.</li>
+        <div class="timeline-content">
+          <h3>Research Scholar and Project Manager, Autonomous Vehicles</h3>
+          <p class="meta">CCI Scholars Undergraduate Research Program, James Madison University</p>
+          <ul>
+            <li>Developed and trained an AI-powered anomaly detection system that uses ROS 2 sensor and localization data to identify system faults and operational irregularities in real time.</li>
+            <li>Integrated a locally served Gemma model through Ollama into the JACart monitoring workflow.</li>
+            <li>Leads planning for a cross-functional autonomous-vehicle team by coordinating subteams, milestones, deliverables, documentation, and onboarding.</li>
+            <li>Previously contributed to ROS 2 migration, PID controller tuning, LiDAR mapping, hardware troubleshooting, and red-team cybersecurity testing.</li>
+            <li>Applies Agile development through incremental testing, feedback, and refinement.</li>
           </ul>
         </div>
       </article>
 
       <article class="timeline-item reveal reveal-delay-1">
         <div class="timeline-date">June 2024 - May 2025</div>
-        <div>
-          <h2>Teaching Assistant</h2>
+        <div class="timeline-content">
+          <h3>Teaching Assistant</h3>
           <p class="meta">James Madison University, Harrisonburg, Virginia</p>
-          <ul class="feature-list">
+          <ul>
             <li>Tutored more than 50 students in core computer science concepts, contributing to an overall class performance increase of 15%.</li>
             <li>Taught Python labs covering binary search trees and Dijkstra's algorithm through live-coded examples and walkthroughs.</li>
           </ul>
@@ -62,23 +76,23 @@
 
       <article class="timeline-item reveal reveal-delay-2">
         <div class="timeline-date">Campus Involvement</div>
-        <div>
-          <h2>Leadership and Organizations</h2>
+        <div class="timeline-content">
+          <h3>Leadership and Organizations</h3>
           <p class="meta">James Madison University</p>
-          <ul class="feature-list">
-            <li>Treasurer of Madison Tech Society.</li>
+          <ul>
+            <li>Co-Founder of Madison Tech Society.</li>
             <li>Committee Head of Web Development for the Madison Artificial Intelligence Club.</li>
-            <li>Student Research Assistant contributing to applied technical work outside the classroom.</li>
+            <li>Project Manager for student autonomous-vehicle research.</li>
           </ul>
         </div>
       </article>
 
       <article class="timeline-item reveal reveal-delay-3">
         <div class="timeline-date">January 2025</div>
-        <div>
-          <h2>CGI Consulting Challenge</h2>
+        <div class="timeline-content">
+          <h3>CGI Consulting Challenge</h3>
           <p class="meta">Participant, Harrisonburg, Virginia</p>
-          <ul class="feature-list">
+          <ul>
             <li>Worked with three peers to build a data-backed strategy for a live client engagement.</li>
             <li>Pitched the final recommendation to CGI consultants and earned top-quartile feedback.</li>
           </ul>
@@ -93,9 +107,11 @@
     <div class="footer-links">
       <a href="mailto:marti7jt@dukes.jmu.edu">marti7jt@dukes.jmu.edu</a>
       <a href="tel:+14108164518">410-816-4518</a>
+      <a href="https://github.com/MartinoJosh15" target="_blank" rel="noopener">GitHub</a>
       <a href="https://www.linkedin.com/in/joshua-martino-748078317/" target="_blank" rel="noopener">LinkedIn</a>
     </div>
   </div>
 </footer>
+<script src="script.js"></script>
 </body>
 </html>

@@ -3,19 +3,20 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Josh Martino | Software Engineering Portfolio</title>
-<meta name="description" content="Josh Martino is a software engineering-oriented Information Technology student at James Madison University building full-stack applications, backend systems, and security-focused tooling.">
+<title>Josh Martino | AI &amp; Machine Learning Engineer</title>
+<meta name="description" content="Josh Martino builds AI and machine learning systems, from a PyTorch GPT-2 reimplementation and neural-network fundamentals to real-time anomaly detection for autonomous vehicles.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="styles.css">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Plus+Jakarta+Sans:wght@400;500;700;800&family=Sora:wght@600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles-v2.css">
 </head>
 <body>
 <a class="sr-only" href="#main">Skip to main content</a>
 <header>
   <div class="wrap site-nav">
     <a class="brand" href="index.html">Josh Martino</a>
-    <nav aria-label="Primary">
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-nav">Menu</button>
+    <nav id="primary-nav" aria-label="Primary">
       <ul>
         <li><a href="index.html" aria-current="page">Home</a></li>
         <li><a href="about.html">About</a></li>
@@ -28,90 +29,112 @@
 </header>
 <main id="main">
   <div class="wrap">
-    <section class="hero">
-      <div class="hero-copy reveal">
-        <p class="eyebrow">Software Engineering Student</p>
-        <h1>Building scalable applications with backend and security focus.</h1>
-        <p class="lead">I am Josh Martino, an Information Technology student at James Madison University with a Robotics minor. I have hands-on experience building full-stack applications, backend systems, and security-focused tooling, and I am looking for a software engineering internship where I can contribute to reliable, production-minded systems.</p>
+    <section class="hero-layout">
+      <article class="hero-shell reveal">
+        <span class="badge">AI + Machine Learning + Systems Engineering</span>
+        <p class="eyebrow">AI Engineering Portfolio</p>
+        <h1>AI systems from transformer internals to autonomous vehicles.</h1>
+        <p class="lead">I am Josh Martino, an Information Technology student at James Madison University with a Robotics minor. I build and train machine learning systems, including a GPT-2 reimplementation in PyTorch, real-time anomaly detection for an autonomous vehicle, and a from-scratch backpropagation engine used to train a neural network.</p>
         <div class="hero-actions">
-          <a class="btn" href="projects.html">View Projects</a>
-          <a class="btn-secondary" href="contact.html">Contact Me</a>
+          <a class="btn" href="projects.html#ai-work">Explore AI Work</a>
+          <a class="btn-secondary" href="contact.html">Talk With Me</a>
+          <a class="btn-ghost" href="https://github.com/MartinoJosh15" target="_blank" rel="noopener">View GitHub</a>
         </div>
-      </div>
-      <div class="hero-visual reveal reveal-delay-1">
-        <img src="Profile.png" alt="Portrait of Josh Martino">
-        <div class="hero-note">
-          <strong>Current focus</strong>
-          Backend engineering, security telemetry workflows, and full-stack application development.
+      </article>
+
+      <div class="hero-side reveal reveal-delay-1">
+        <div class="hero-portrait">
+          <img src="Profile.png" alt="Portrait of Josh Martino">
+          <div class="hero-note">
+            <span>Current direction</span>
+            <strong>AI engineering grounded in software, systems, and first principles.</strong>
+          </div>
         </div>
       </div>
     </section>
 
-    <section class="stats">
-      <article class="stat reveal reveal-delay-1">
-        <strong>2027</strong>
-        <span>Expected graduation from James Madison University</span>
-      </article>
-      <article class="stat reveal reveal-delay-2">
-        <strong>3</strong>
-        <span>Leadership and involvement roles across campus technical organizations</span>
-      </article>
-      <article class="stat reveal reveal-delay-3">
-        <strong>50+</strong>
-        <span>Students supported as a teaching assistant in core computer science concepts</span>
-      </article>
+    <section class="accent-band reveal reveal-delay-1">
+      <div class="accent-item">
+        <strong>GPT-2</strong>
+        <span>Transformer architecture and optimized training pipeline in PyTorch</span>
+      </div>
+      <div class="accent-item">
+        <strong>JACart AI</strong>
+        <span>Real-time anomaly detection across autonomous vehicle telemetry</span>
+      </div>
+      <div class="accent-item">
+        <strong>Autodiff</strong>
+        <span>Backpropagation through mathematical expressions from scratch</span>
+      </div>
+      <div class="accent-item">
+        <strong>SentinelNet</strong>
+        <span>Cloud-native security telemetry pipeline validated at scale</span>
+      </div>
     </section>
 
-    <section>
-      <div class="section-heading">
-        <div>
-          <p class="eyebrow">What I Build</p>
-          <h2>Software projects grounded in implementation detail</h2>
-        </div>
-      </div>
-      <div class="grid-3">
-        <article class="card reveal">
-          <h3>Backend and Cloud Systems</h3>
-          <p>I build data pipelines, backend services, and infrastructure with an emphasis on consistency, observability, and clean system behavior.</p>
-        </article>
-        <article class="card reveal reveal-delay-1">
-          <h3>Full-Stack Applications</h3>
-          <p>I work on interfaces and application flows that stay practical while still supporting solid data models and scalable architecture.</p>
-        </article>
-        <article class="card reveal reveal-delay-2">
-          <h3>Security and Operational Tooling</h3>
-          <p>I am especially interested in security-focused software, telemetry pipelines, and tools that improve visibility into system state.</p>
-        </article>
-      </div>
+    <section class="home-grid">
+      <article class="quote-panel reveal">
+        <p class="eyebrow">Approach</p>
+        <h2>I want to understand both the model and the system around it.</h2>
+        <p class="lead">My AI work is grounded in implementation. I have built gradient propagation myself, reconstructed the components of GPT-2, optimized a modern training loop, and connected AI to live robotics data. That systems background helps me think beyond a notebook toward reliable, useful AI products.</p>
+      </article>
+      <article class="sidebar-card reveal reveal-delay-1">
+        <p class="eyebrow">How I Work</p>
+        <ul>
+          <li>I learn core ML concepts deeply enough to implement them, not just call them.</li>
+          <li>I treat data flow, training stability, evaluation, and deployment as one system.</li>
+          <li>I connect AI models to real applications, from robotics telemetry to product workflows.</li>
+          <li>I bring backend, cloud, and full-stack experience to machine learning work.</li>
+        </ul>
+      </article>
     </section>
 
     <section>
       <div class="section-heading">
         <div>
           <p class="eyebrow">Featured Work</p>
-          <h2>Projects aligned with my internship focus</h2>
+          <h2>Three projects that show how I am growing into AI engineering</h2>
         </div>
-        <a class="btn-secondary" href="projects.html">See All Projects</a>
+        <a class="btn-secondary" href="projects.html">Explore All Projects</a>
       </div>
-      <div class="project-grid">
-        <article class="project-card reveal">
-          <p class="kicker">Security Engineering</p>
-          <h3>SentinelNet</h3>
-          <p>SOC-style dashboard and ingestion pipeline for security event triage, built around reliable alert handling and backend telemetry storage.</p>
+
+      <div class="project-grid primary">
+        <article class="project-card dark reveal">
+          <span class="badge">Transformer Engineering</span>
+          <h3>GPT-2 Reimplementation</h3>
+          <p class="meta">Architecture, training optimization, and autoregressive generation</p>
+          <p>Reimplemented GPT-2 in PyTorch, including embeddings, multi-head causal self-attention, transformer blocks, weight tying, and text generation, then built an optimized training pipeline around it.</p>
           <div class="tag-row">
-            <span class="tag">Python Lambda</span>
-            <span class="tag">SQS</span>
-            <span class="tag">DynamoDB</span>
+            <span class="tag">PyTorch</span>
+            <span class="tag">Transformers</span>
+            <span class="tag">Mixed Precision</span>
+            <span class="tag">NLP</span>
           </div>
         </article>
+
         <article class="project-card reveal reveal-delay-1">
-          <p class="kicker">Full-Stack Product</p>
-          <h3>DayLy</h3>
-          <p>Production-style scheduling and task management application with real-time interactions, recurring events, and polished interface design.</p>
+          <span class="badge">Applied AI + Robotics</span>
+          <h3>JACart Anomaly Detection</h3>
+          <p class="meta">AI-powered monitoring for an autonomous vehicle</p>
+          <p>Developed and trained an anomaly detection system that uses ROS 2 sensor and localization data to identify faults and operational irregularities in real time.</p>
           <div class="tag-row">
-            <span class="tag">React</span>
-            <span class="tag">FullCalendar</span>
-            <span class="tag">Vite</span>
+            <span class="tag">ROS 2</span>
+            <span class="tag">Anomaly Detection</span>
+            <span class="tag">Ollama</span>
+            <span class="tag">Autonomous Systems</span>
+          </div>
+        </article>
+
+        <article class="project-card reveal reveal-delay-2">
+          <span class="badge">ML Fundamentals</span>
+          <h3>Backpropagation Engine</h3>
+          <p class="meta">Automatic differentiation and neural-network training from scratch</p>
+          <p>Built a script that backpropagates through mathematical expressions, then used that gradient engine to train a neural network and connect the math behind learning to a working implementation.</p>
+          <div class="tag-row">
+            <span class="tag">Backpropagation</span>
+            <span class="tag">Autodiff</span>
+            <span class="tag">Neural Networks</span>
+            <span class="tag">ML Foundations</span>
           </div>
         </article>
       </div>
@@ -124,9 +147,11 @@
     <div class="footer-links">
       <a href="mailto:marti7jt@dukes.jmu.edu">marti7jt@dukes.jmu.edu</a>
       <a href="tel:+14108164518">410-816-4518</a>
+      <a href="https://github.com/MartinoJosh15" target="_blank" rel="noopener">GitHub</a>
       <a href="https://www.linkedin.com/in/joshua-martino-748078317/" target="_blank" rel="noopener">LinkedIn</a>
     </div>
   </div>
 </footer>
+<script src="script.js"></script>
 </body>
 </html>

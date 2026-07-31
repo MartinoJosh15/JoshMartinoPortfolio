@@ -4,18 +4,19 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Contact | Josh Martino</title>
-<meta name="description" content="Contact Josh Martino for internship opportunities, technical collaboration, and project discussions.">
+<meta name="description" content="Contact Josh Martino for AI, machine learning, software engineering, and technical collaboration opportunities.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="styles.css">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Plus+Jakarta+Sans:wght@400;500;700;800&family=Sora:wght@600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles-v2.css">
 </head>
 <body>
 <a class="sr-only" href="#main">Skip to main content</a>
 <header>
   <div class="wrap site-nav">
     <a class="brand" href="index.html">Josh Martino</a>
-    <nav aria-label="Primary">
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-nav">Menu</button>
+    <nav id="primary-nav" aria-label="Primary">
       <ul>
         <li><a href="index.html">Home</a></li>
         <li><a href="about.html">About</a></li>
@@ -28,11 +29,11 @@
 </header>
 <main id="main">
   <div class="wrap">
-    <section class="contact-grid">
-      <article class="panel reveal">
+    <section class="contact-layout">
+      <article class="panel contact-intro reveal">
         <p class="eyebrow">Contact</p>
-        <h1>Open to internships, collaboration, and technical conversations.</h1>
-        <p class="lead">Use the form to reach out directly. Messages are sent through Formspree, so the form works on static hosting without requiring a custom backend.</p>
+        <h1>Let's build intelligent systems.</h1>
+        <p class="lead">I am especially interested in teams working on model development, intelligent products, and the software systems that support them. Use the form to reach out directly.</p>
         <div class="contact-list">
           <a class="contact-link" href="mailto:marti7jt@dukes.jmu.edu">
             <strong>Email</strong><br>
@@ -46,11 +47,16 @@
             <strong>LinkedIn</strong><br>
             Connect professionally
           </a>
+          <a class="contact-link" href="https://github.com/MartinoJosh15" target="_blank" rel="noopener">
+            <strong>GitHub</strong><br>
+            Explore my code
+          </a>
         </div>
       </article>
 
       <article class="contact-card reveal reveal-delay-1">
-        <h2>Send a message</h2>
+        <p class="eyebrow">Message</p>
+        <h2>Send a note</h2>
         <form action="https://formspree.io/f/xpqygvoa" method="POST">
           <input type="hidden" name="_subject" value="New portfolio contact submission">
 
@@ -63,6 +69,7 @@
           <label for="reason">Reason</label>
           <select id="reason" name="reason" required>
             <option value="">Select one</option>
+            <option value="AI or ML opportunity">AI or ML opportunity</option>
             <option value="Internship">Internship</option>
             <option value="Project collaboration">Project collaboration</option>
             <option value="Networking">Networking</option>
@@ -74,7 +81,7 @@
 
           <button type="submit" class="btn">Send Message</button>
         </form>
-        <p class="muted">If the form is blocked by a browser extension, email is the fallback.</p>
+        <p class="muted-note">If the form is blocked by a browser extension, email is the fallback.</p>
       </article>
     </section>
   </div>
@@ -85,9 +92,11 @@
     <div class="footer-links">
       <a href="mailto:marti7jt@dukes.jmu.edu">marti7jt@dukes.jmu.edu</a>
       <a href="tel:+14108164518">410-816-4518</a>
+      <a href="https://github.com/MartinoJosh15" target="_blank" rel="noopener">GitHub</a>
       <a href="https://www.linkedin.com/in/joshua-martino-748078317/" target="_blank" rel="noopener">LinkedIn</a>
     </div>
   </div>
 </footer>
+<script src="script.js"></script>
 </body>
 </html>

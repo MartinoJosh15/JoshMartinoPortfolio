@@ -3,19 +3,20 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>About | Josh Martino</title>
-<meta name="description" content="About Josh Martino, a software engineering-oriented Information Technology student focused on backend systems, security tooling, and full-stack development.">
+<title>About | Josh Martino, AI &amp; Machine Learning Engineer</title>
+<meta name="description" content="About Josh Martino, an AI and machine learning-focused Information Technology student building transformer models, autonomous AI systems, and production-minded software.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="styles.css">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Plus+Jakarta+Sans:wght@400;500;700;800&family=Sora:wght@600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles-v2.css">
 </head>
 <body>
 <a class="sr-only" href="#main">Skip to main content</a>
 <header>
   <div class="wrap site-nav">
     <a class="brand" href="index.html">Josh Martino</a>
-    <nav aria-label="Primary">
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-nav">Menu</button>
+    <nav id="primary-nav" aria-label="Primary">
       <ul>
         <li><a href="index.html">Home</a></li>
         <li><a href="about.html" aria-current="page">About</a></li>
@@ -28,50 +29,65 @@
 </header>
 <main id="main">
   <div class="wrap">
-    <section class="panel reveal">
-      <p class="eyebrow">About Me</p>
-      <h1>Software engineering student with hands-on project experience.</h1>
-      <p class="lead">I build full-stack applications and security-focused tooling, with particular interest in backend systems, scalable software, and the fundamentals behind reliable engineering. My recent work includes SentinelNet, a SOC-style dashboard for security event triage, and JMU Lifts, a data-driven discovery app with search and filtering.</p>
-      <p>I am currently seeking a software engineering internship where I can contribute to well-built systems, grow in backend and security fundamentals, and keep sharpening how I design, implement, and iterate on technical products.</p>
-    </section>
-
-    <section class="grid-2">
-      <article class="card reveal reveal-delay-1">
-        <h2>Experience highlights</h2>
-        <ul class="feature-list">
-          <li>Research Scholar in the CCI Scholars undergraduate research program, working on autonomous vehicle systems with ROS2 and sensor integration.</li>
-          <li>Teaching Assistant at James Madison University, tutoring more than 50 students in computer science topics and live-coding Python labs.</li>
-          <li>Hands-on builder across backend pipelines, full-stack application design, and security-oriented software projects.</li>
-          <li>Comfortable operating across team-based environments using iterative development and technical communication.</li>
-        </ul>
+    <section class="page-hero">
+      <article class="page-hero-copy panel reveal">
+        <p class="eyebrow">About Me</p>
+        <h1>Building toward AI engineering from strong software fundamentals.</h1>
+        <p class="lead">My work spans machine learning fundamentals, transformer implementation, and applied AI. I have reimplemented GPT-2 in PyTorch, trained an anomaly detection system for an autonomous vehicle, and built a backpropagation engine that I used to train a neural network.</p>
+        <p class="muted-note">I am seeking an AI, machine learning, or software engineering internship where I can contribute to model development and the systems that make intelligent products reliable.</p>
       </article>
-      <article class="card reveal reveal-delay-2">
-        <h2>Current focus</h2>
-        <ul class="feature-list">
-          <li>Backend systems that emphasize reliability, clean data flow, and maintainability.</li>
-          <li>Security telemetry and SOC-style workflows for ingestion, triage, and operational visibility.</li>
-          <li>Full-stack applications with strong UI structure and practical user-facing features.</li>
-          <li>Applying software engineering habits to projects that need clarity, iteration, and sound technical foundations.</li>
+
+      <article class="sidebar-card reveal reveal-delay-1">
+        <p class="eyebrow">Interests</p>
+        <ul>
+          <li>Transformer architectures, language models, and efficient model training.</li>
+          <li>Applied AI for autonomous systems, anomaly detection, and operational visibility.</li>
+          <li>Machine learning fundamentals, including gradients, backpropagation, and neural networks.</li>
+          <li>Production-minded AI systems supported by reliable backend and cloud infrastructure.</li>
         </ul>
       </article>
     </section>
 
     <section class="grid-2">
       <article class="card reveal">
+        <h2>Experience highlights</h2>
+        <ul>
+          <li>Research Scholar and Project Manager in the CCI Scholars program, developing AI-powered anomaly detection for an autonomous vehicle.</li>
+          <li>Reimplemented the GPT-2 transformer architecture and built a stability-focused PyTorch training pipeline.</li>
+          <li>Teaching Assistant at James Madison University, tutoring more than 50 students in computer science topics and live-coding Python labs.</li>
+          <li>Hands-on builder across AI/ML, cloud pipelines, full-stack applications, and security-oriented software.</li>
+        </ul>
+      </article>
+
+      <article class="card reveal reveal-delay-1">
+        <h2>How I approach projects</h2>
+        <ul>
+          <li>I implement core ideas myself when doing so will deepen my understanding of the tools I use.</li>
+          <li>I approach model architecture, data flow, training stability, and application behavior as connected problems.</li>
+          <li>I value measurable iteration, clean experiments, and implementation choices that are easy to explain.</li>
+          <li>I like AI projects that move beyond a demo and serve a real operational or user need.</li>
+        </ul>
+      </article>
+    </section>
+
+    <section class="grid-2 education-grid">
+      <article class="card reveal">
         <h2>Education and involvement</h2>
         <p><strong>James Madison University</strong></p>
-        <p class="meta">B.S. in Information Technology, expected May 2027</p>
-        <p class="meta">Minor in Robotics</p>
-        <p class="meta">Treasurer, Madison Tech Society</p>
-        <p class="meta">Student Research Assistant</p>
-        <p class="meta">Committee Head of Web Development, Madison Artificial Intelligence Club</p>
+        <p class="muted-note">B.S. in Information Technology, expected May 2027</p>
+        <p class="muted-note">Minor in Robotics</p>
+        <p class="muted-note">Co-Founder, Madison Tech Society</p>
+        <p class="muted-note">Project Manager for Student Research</p>
+        <p class="muted-note">Committee Head of Web Development, Madison Artificial Intelligence Club</p>
       </article>
+
       <article class="card reveal reveal-delay-1">
         <h2>Technical stack</h2>
-        <p><strong>Frontend:</strong> HTML, CSS, JavaScript, UI Design, Responsive Layouts, React, Vite</p>
-        <p><strong>Backend:</strong> Python, Java, SQL, Pandas, NumPy, Docker, AWS CDK, Wazuh, scikit-learn</p>
-        <p><strong>Systems:</strong> Linux CLI, Wireshark, Networking Fundamentals, Containerization, AWS</p>
-        <p><strong>Databases and tools:</strong> PostgreSQL, MySQL, Supabase, ERD Design, Query Optimization, GitHub, VS Code, Matplotlib, Ubuntu</p>
+        <p><strong>AI and machine learning:</strong> PyTorch, scikit-learn, Pandas, NumPy, NLP, Transformers, LLMs, model training, hyperparameter tuning, backpropagation</p>
+        <p><strong>Programming:</strong> Python, Java, JavaScript, SQL</p>
+        <p><strong>Cloud and backend:</strong> AWS, AWS CDK, Lambda, SQS, DynamoDB, Docker, REST APIs, Supabase</p>
+        <p><strong>Systems and robotics:</strong> ROS 2, Linux, Ollama, computer networking, Wireshark</p>
+        <p><strong>Frontend and tools:</strong> React, Vite, HTML, CSS, FullCalendar, Git, GitHub, Jupyter Notebook, Matplotlib</p>
       </article>
     </section>
   </div>
@@ -82,9 +98,11 @@
     <div class="footer-links">
       <a href="mailto:marti7jt@dukes.jmu.edu">marti7jt@dukes.jmu.edu</a>
       <a href="tel:+14108164518">410-816-4518</a>
+      <a href="https://github.com/MartinoJosh15" target="_blank" rel="noopener">GitHub</a>
       <a href="https://www.linkedin.com/in/joshua-martino-748078317/" target="_blank" rel="noopener">LinkedIn</a>
     </div>
   </div>
 </footer>
+<script src="script.js"></script>
 </body>
 </html>
