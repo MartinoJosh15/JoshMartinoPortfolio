@@ -1,204 +1,54 @@
 <!doctype html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>AI &amp; Engineering Projects | Josh Martino</title>
-<meta name="description" content="AI and machine learning projects by Josh Martino, including a GPT-2 reimplementation, autonomous-vehicle anomaly detection, a backpropagation engine, and production-minded software systems.">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Plus+Jakarta+Sans:wght@400;500;700;800&family=Sora:wght@600;700;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="styles-v2.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Engineering Work &amp; Case Studies | Josh Martino</title>
+  <meta name="description" content="Engineering case studies and project archive by Josh Martino: GPT-2 in PyTorch, JACart autonomous research, SentinelNet on AWS, and selected software and ML work.">
+  <link rel="canonical" href="https://martinojosh15.github.io/JoshMartinoPortfolio/projects.html">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <meta name="theme-color" content="#0b1730">
+  <meta property="og:type" content="website"><meta property="og:title" content="Engineering Work &amp; Case Studies | Josh Martino"><meta property="og:description" content="Architecture, ownership, implementation, tradeoffs, and verified outcomes across AI, autonomous systems, and cloud software."><meta property="og:url" content="https://martinojosh15.github.io/JoshMartinoPortfolio/projects.html">
+  <meta name="twitter:card" content="summary">
+  <!-- TODO: Add og:image and twitter:image after assets/social-preview.png is approved. -->
+  <link rel="stylesheet" href="styles-v2.css">
 </head>
 <body>
-<a class="sr-only" href="#main">Skip to main content</a>
-<header>
-  <div class="wrap site-nav">
-    <a class="brand" href="index.html">Josh Martino</a>
-    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-nav">Menu</button>
-    <nav id="primary-nav" aria-label="Primary">
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="projects.html" aria-current="page">Projects</a></li>
-        <li><a href="activities.html">Activities</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
-  </div>
-</header>
-<main id="main">
-  <div class="wrap">
-    <section class="page-hero">
-      <article class="page-hero-copy panel reveal">
-        <p class="eyebrow">AI + Engineering Work</p>
-        <h1>From neural-network mechanics to applied AI systems.</h1>
-        <p class="lead">My strongest work follows a clear progression: understand the mathematics, implement modern architectures, optimize training, and connect models to real systems. The supporting software projects show that I can also build the infrastructure and product experiences around AI.</p>
-      </article>
+  <a class="skip-link" href="#main">Skip to main content</a>
+  <header><div class="wrap site-nav"><a class="brand" href="index.html" aria-label="Josh Martino, home"><span class="brand-mark" aria-hidden="true">JM</span>Josh Martino</a><button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-nav">Menu</button><nav id="primary-nav" aria-label="Primary navigation"><ul><li><a href="index.html">Home</a></li><li><a href="projects.html" aria-current="page">Work</a></li><li><a href="activities.html">Experience</a></li><li><span class="nav-disabled" aria-disabled="true" title="Articles are in review">Writing</span></li><li><a href="about.html">About</a></li><li><a href="contact.html">Contact</a></li><li><a href="assets/Josh_Martino_SWE_AI_Resume.pdf">Resume</a></li></ul></nav></div></header>
 
-      <article class="sidebar-card reveal reveal-delay-1">
-        <p class="eyebrow">The Throughline</p>
-        <ul>
-          <li>Core ML concepts implemented from scratch to build real understanding.</li>
-          <li>Transformer architecture and training decisions expressed directly in PyTorch.</li>
-          <li>Applied AI connected to live autonomous-vehicle telemetry.</li>
-          <li>Backend, cloud, and product skills that support end-to-end delivery.</li>
-        </ul>
-      </article>
+  <main id="main"><div class="wrap">
+    <section class="page-hero" aria-labelledby="work-title">
+      <article class="panel page-hero-copy reveal"><p class="eyebrow">Work</p><h1 id="work-title">Systems explained through evidence and decisions.</h1><p class="lead">The flagship case studies go beyond a technology list: each traces the problem, architecture, personal ownership, implementation choices, constraints, and verified outcomes.</p></article>
+      <aside class="panel page-hero-aside reveal reveal-delay-1"><p class="eyebrow">How to read this work</p><h2>Three levels of engineering depth</h2><ul><li>Model internals and training mechanics</li><li>AI integrated with sensor-driven systems</li><li>Reliable cloud and product infrastructure</li></ul></aside>
     </section>
 
-    <section id="ai-work">
-      <div class="section-heading">
-        <div>
-          <p class="eyebrow">Primary AI Work</p>
-          <h2>Learning the foundations, then applying them</h2>
-        </div>
-      </div>
-
-      <div class="project-grid primary">
-        <article class="project-card case-study dark reveal">
-          <div class="case-study-main">
-            <span class="badge">Transformer Engineering</span>
-            <h3>GPT-2 Reimplementation and Training Optimization</h3>
-            <p class="meta">Machine Learning Engineer</p>
-            <p>Reimplemented the GPT-2 transformer architecture in PyTorch to understand how modern language models are assembled and trained, from token representation through autoregressive generation.</p>
-            <div class="tag-row">
-              <span class="tag">PyTorch</span>
-              <span class="tag">Transformers</span>
-              <span class="tag">NLP</span>
-              <span class="tag">Model Training</span>
-            </div>
-          </div>
-          <div class="case-study-details">
-            <p class="eyebrow">Implementation notes</p>
-            <ul>
-              <li>Implemented token and positional embeddings, multi-head causal self-attention, transformer blocks, weight tying, and autoregressive text generation.</li>
-              <li>Built an efficient data-loading and training pipeline with mixed-precision training and gradient accumulation.</li>
-              <li>Added learning-rate scheduling and gradient clipping to improve training stability and model performance.</li>
-            </ul>
-          </div>
-        </article>
-
-        <article class="project-card case-study reveal reveal-delay-1">
-          <div class="case-study-main">
-            <span class="badge">Applied AI + Robotics</span>
-            <h3>JACart AI Anomaly Detection</h3>
-            <p class="meta">Research Scholar and Project Manager</p>
-            <p>Developed and trained an AI-powered anomaly detection system for the JACart autonomous vehicle, turning ROS 2 sensor and localization data into operational insight.</p>
-            <div class="tag-row">
-              <span class="tag">ROS 2</span>
-              <span class="tag">Anomaly Detection</span>
-              <span class="tag">Ollama</span>
-              <span class="tag">Autonomous Vehicles</span>
-            </div>
-          </div>
-          <div class="case-study-details">
-            <p class="eyebrow">Research impact</p>
-            <ul>
-              <li>Integrated live sensor and localization telemetry to identify system faults and operational irregularities in real time.</li>
-              <li>Connected the workflow to a locally served Gemma model through Ollama for on-system AI analysis.</li>
-              <li>Iterated through incremental testing, feedback, and refinement in an Agile research environment.</li>
-              <li>Coordinates subteams, milestones, documentation, and onboarding as Project Manager for the autonomous-vehicle research team.</li>
-            </ul>
-          </div>
-        </article>
-
-        <article class="project-card case-study reveal reveal-delay-2">
-          <div class="case-study-main">
-            <span class="badge">ML Fundamentals</span>
-            <h3>Backpropagation and Neural Network Engine</h3>
-            <p class="meta">From-scratch machine learning implementation</p>
-            <p>Built a script that can backpropagate through mathematical expressions, then used the resulting gradient engine to train a neural network.</p>
-            <div class="tag-row">
-              <span class="tag">Backpropagation</span>
-              <span class="tag">Automatic Differentiation</span>
-              <span class="tag">Neural Networks</span>
-              <span class="tag">ML Foundations</span>
-            </div>
-          </div>
-          <div class="case-study-details">
-            <p class="eyebrow">What I learned</p>
-            <ul>
-              <li>Represented mathematical operations in a form that supports forward evaluation and reverse-mode gradient propagation.</li>
-              <li>Used the engine to connect derivatives, parameter gradients, and optimization to a working neural-network training process.</li>
-              <li>Built the project to strengthen my understanding of what machine learning frameworks automate beneath their APIs.</li>
-            </ul>
-          </div>
-        </article>
+    <section id="flagship" aria-labelledby="flagship-title">
+      <div class="section-heading"><div><p class="eyebrow">Flagship case studies</p><h2 id="flagship-title">Architecture, ownership, and tradeoffs.</h2></div></div>
+      <div class="project-list">
+        <article class="project-card reveal"><div class="project-visual"><img src="assets/projects/gpt2-architecture.svg" width="1000" height="620" loading="lazy" decoding="async" alt="GPT-2 architecture from tokens to autoregressive generation"></div><div class="project-copy"><span class="badge">Transformer Engineering</span><h3>GPT-2 Reimplementation &amp; GPU Training Optimization</h3><p class="project-role">Independent ML engineer</p><p>Reimplemented the GPT-2 model path in PyTorch and built a CUDA-accelerated training pipeline with mixed precision, gradient accumulation, scheduling, clipping, and efficient data loading.</p><div class="tag-row"><span class="tag">PyTorch</span><span class="tag">CUDA</span><span class="tag">Transformers</span><span class="tag">NLP</span></div><div class="card-links"><a class="text-link" href="projects/gpt2.html">Read case study</a></div></div></article>
+        <article class="project-card reveal"><div class="project-visual"><img src="assets/projects/jacart-architecture.svg" width="1000" height="700" loading="lazy" decoding="async" alt="JACart multimodal anomaly-detection system architecture"></div><div class="project-copy"><span class="badge">Autonomous Systems + Applied AI</span><h3>JACart Autonomous Vehicle</h3><p class="project-role">Project Manager &amp; Undergraduate Research Assistant</p><p>Worked across ROS 2 sensor integration, localization, multimodal anomaly detection, system debugging, and project planning as responsibilities expanded from contributor to technical leadership.</p><div class="tag-row"><span class="tag">ROS 2</span><span class="tag">MOLA</span><span class="tag">LiDAR</span><span class="tag">ZED</span><span class="tag">Ollama</span></div><p class="proof"><strong>System evidence:</strong> Velodyne point-cloud processing stabilized at approximately 10 Hz.</p><div class="card-links"><a class="text-link" href="projects/jacart.html">Read case study</a></div></div></article>
+        <article class="project-card reveal"><div class="project-visual"><img src="assets/projects/sentinelnet-architecture.svg" width="1000" height="560" loading="lazy" decoding="async" alt="SentinelNet event-driven AWS architecture"></div><div class="project-copy"><span class="badge">Cloud + Security Telemetry</span><h3>SentinelNet</h3><p class="project-role">Cloud/backend engineer</p><p>Designed a Wazuh-to-SQS-to-Lambda ingestion path, DynamoDB persistence layer, and API security controls as repeatable infrastructure defined with AWS CDK.</p><div class="tag-row"><span class="tag">Python</span><span class="tag">AWS CDK</span><span class="tag">SQS</span><span class="tag">Lambda</span><span class="tag">DynamoDB</span></div><p class="proof"><strong>Validation:</strong> Tested end to end against hundreds of security alerts.</p><div class="card-links"><a class="text-link" href="projects/sentinelnet.html">Read case study</a><a class="text-link" href="https://github.com/wjed/sentinel" target="_blank" rel="noopener noreferrer">View source</a></div></div></article>
       </div>
     </section>
 
-    <section>
-      <div class="section-heading">
-        <div>
-          <p class="eyebrow">Supporting Engineering Work</p>
-          <h2>Backend, cloud, and product systems that strengthen my AI foundation</h2>
-        </div>
-      </div>
-
-      <div class="project-grid secondary">
-        <article class="project-card reveal">
-          <span class="badge">Security + Cloud</span>
-          <h3>SentinelNet</h3>
-          <p>Engineered a Wazuh alert-ingestion pipeline that sends security telemetry through SQS, processes it with Python Lambda, and stores normalized records in DynamoDB.</p>
-          <div class="tag-row">
-            <span class="tag">Python Lambda</span>
-            <span class="tag">AWS CDK</span>
-            <span class="tag">SQS</span>
-            <span class="tag">DynamoDB</span>
-          </div>
-          <ul>
-            <li>Validated the pipeline against hundreds of alerts in dedicated machine testing.</li>
-            <li>Automated secure, scalable infrastructure provisioning with AWS CDK in Python.</li>
-          </ul>
-        </article>
-
-        <article class="project-card reveal reveal-delay-1">
-          <span class="badge">Full-Stack Product</span>
-          <h3>DayLy</h3>
-          <p>Built a full-stack planner ecosystem with calendar scheduling, recurring events, Kanban workflows, Python-powered coursework imports, and persistent data syncing.</p>
-          <div class="tag-row">
-            <span class="tag">React</span>
-            <span class="tag">Supabase</span>
-            <span class="tag">Python</span>
-            <span class="tag">FullCalendar</span>
-          </div>
-          <ul>
-            <li>Created day, week, and month planning views with drag-and-drop rescheduling and task editing.</li>
-            <li>Developed logic that turns open tasks into scheduled work blocks based on priority and availability.</li>
-          </ul>
-        </article>
-
-        <article class="project-card reveal reveal-delay-2">
-          <span class="badge">Identity + Access</span>
-          <h3>JMU Lifts</h3>
-          <p>Co-founded a campus ride platform and implemented its authentication backbone, student-only access controls, verification flow, and persistent account infrastructure.</p>
-          <div class="tag-row">
-            <span class="tag">Firebase Auth</span>
-            <span class="tag">Backend Logic</span>
-            <span class="tag">Access Control</span>
-            <span class="tag">Database Integration</span>
-          </div>
-          <ul>
-            <li>Enforced JMU email-domain validation and verification-based sign-up.</li>
-            <li>Added database-backed account persistence for one-time registration across devices.</li>
-          </ul>
-        </article>
+    <section aria-labelledby="archive-title">
+      <div class="section-heading"><div><p class="eyebrow">Additional engineering work</p><h2 id="archive-title">Focused projects with a clear technical signal.</h2></div><p class="lead">A compact archive keeps the emphasis on what each build demonstrates instead of turning every project into a full case study.</p></div>
+      <div class="archive-shell reveal">
+        <table class="project-table">
+          <thead><tr><th scope="col">Project</th><th scope="col">Status / year</th><th scope="col">Area</th><th scope="col">Key technologies</th><th scope="col">Evidence</th></tr></thead>
+          <tbody>
+            <tr><td data-label="Project"><strong>Backpropagation / Autodiff Engine</strong><small>Represented computational expressions, propagated gradients with reverse-mode automatic differentiation, and used the resulting engine to train a neural network.</small></td><td data-label="Status / year">Independent build</td><td data-label="Area">ML fundamentals</td><td data-label="Technologies">Python · Autodiff · Neural networks</td><td data-label="Evidence">Implementation details available on request</td></tr>
+            <tr><td data-label="Project"><strong>DayLy</strong><small>Full-stack planner with calendar scheduling, recurring RRULE events, Kanban/project workflows, task prioritization, and persistent data.</small></td><td data-label="Status / year">Active</td><td data-label="Area">Full-stack product</td><td data-label="Technologies">React · Supabase · FullCalendar · Python</td><td data-label="Evidence"><a href="https://github.com/MartinoJosh15/DayLy" target="_blank" rel="noopener noreferrer">Public source</a><!-- TODO: Add a real application screenshot from the running product when available. --></td></tr>
+            <tr><td data-label="Project"><strong>JMULifts</strong><small>Campus rideshare product prototype with Firebase email-link authentication, university-domain access controls, persistent accounts, and HCI-driven user flows.</small></td><td data-label="Status / year">Prototype</td><td data-label="Area">Mobile / product</td><td data-label="Technologies">Swift · Firebase · HCI / UX</td><td data-label="Evidence">Private project; no public source link</td></tr>
+            <tr><td data-label="Project"><strong>Type 1 Diabetes Adverse Event Prediction</strong><small>Developing deep-learning models over physiological time-series data, with emphasis on event definition, baseline comparison, model evaluation, and useful prediction lead time.</small></td><td data-label="Status / year">Current</td><td data-label="Area">Digital health ML</td><td data-label="Technologies">Python · Deep learning · Time series</td><td data-label="Evidence">Metrics withheld until evaluation is complete</td></tr>
+          </tbody>
+        </table>
       </div>
     </section>
-  </div>
-</main>
-<footer>
-  <div class="wrap footer-content">
-    <p>&copy; 2026 Josh Martino</p>
-    <div class="footer-links">
-      <a href="mailto:marti7jt@dukes.jmu.edu">marti7jt@dukes.jmu.edu</a>
-      <a href="tel:+14108164518">410-816-4518</a>
-      <a href="https://github.com/MartinoJosh15" target="_blank" rel="noopener">GitHub</a>
-      <a href="https://www.linkedin.com/in/joshua-martino-748078317/" target="_blank" rel="noopener">LinkedIn</a>
-    </div>
-  </div>
-</footer>
-<script src="script.js"></script>
+  </div></main>
+
+  <footer><div class="wrap footer-content"><div><p><strong>Josh Martino</strong> · Software Engineering · AI/ML · Autonomous Systems</p><p>Available for full-time roles beginning May 2027.</p></div><div class="footer-links"><a href="mailto:marti7jt@dukes.jmu.edu">Email</a><a href="https://github.com/MartinoJosh15" target="_blank" rel="noopener noreferrer">GitHub</a><a href="https://www.linkedin.com/in/joshua-martino-748078317/" target="_blank" rel="noopener noreferrer">LinkedIn</a><a href="assets/Josh_Martino_SWE_AI_Resume.pdf">Resume</a></div></div></footer>
+  <script src="script.js" defer></script>
 </body>
 </html>
