@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 540" role="img" aria-labelledby="title desc">
+  <title id="title">GPT-2 training pipeline</title>
+  <desc id="desc">Dataset preparation and batching feed CUDA-accelerated mixed-precision training with gradient accumulation, optimization, checkpointing, and generation checks.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1"><stop stop-color="#0f2446"/><stop offset="1" stop-color="#08152c"/></linearGradient>
+    <marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0l8 4-8 4z" fill="#60c9dc"/></marker>
+  </defs>
+  <rect width="1000" height="540" rx="28" fill="url(#bg)"/>
+  <text x="50" y="60" fill="#7dd3e1" font-family="monospace" font-size="18" letter-spacing="3">TRAINING PIPELINE / CUDA-ACCELERATED</text>
+  <g font-family="Arial, sans-serif" text-anchor="middle">
+    <g transform="translate(48 105)"><rect width="205" height="100" rx="15" fill="#132e58" stroke="#3569ad"/><text x="102" y="45" fill="#fff" font-size="23" font-weight="700">Dataset</text><text x="102" y="72" fill="#9fb7d8" font-size="15">token stream</text></g>
+    <path d="M253 155h75" stroke="#60c9dc" stroke-width="3" marker-end="url(#arrow)"/>
+    <g transform="translate(338 105)"><rect width="205" height="100" rx="15" fill="#132e58" stroke="#3569ad"/><text x="102" y="45" fill="#fff" font-size="23" font-weight="700">Batching</text><text x="102" y="72" fill="#9fb7d8" font-size="15">efficient loading</text></g>
+    <path d="M543 155h75" stroke="#60c9dc" stroke-width="3" marker-end="url(#arrow)"/>
+    <g transform="translate(628 90)"><rect width="325" height="130" rx="17" fill="#173a70" stroke="#42b7dc" stroke-width="2"/><text x="162" y="48" fill="#fff" font-size="25" font-weight="700">GPU / CUDA</text><text x="162" y="80" fill="#a8c7f2" font-size="17">mixed precision</text><text x="162" y="105" fill="#a8c7f2" font-size="17">forward + backward passes</text></g>
+    <path d="M790 220v65" stroke="#60c9dc" stroke-width="3" marker-end="url(#arrow)"/>
+    <g transform="translate(628 295)"><rect width="325" height="100" rx="15" fill="#132e58" stroke="#3569ad"/><text x="162" y="43" fill="#fff" font-size="22" font-weight="700">Gradient accumulation</text><text x="162" y="71" fill="#9fb7d8" font-size="15">clipping + stable updates</text></g>
+    <path d="M628 345H543" stroke="#60c9dc" stroke-width="3" marker-end="url(#arrow)"/>
+    <g transform="translate(338 295)"><rect width="195" height="100" rx="15" fill="#132e58" stroke="#3569ad"/><text x="97" y="43" fill="#fff" font-size="22" font-weight="700">Optimizer</text><text x="97" y="71" fill="#9fb7d8" font-size="15">LR schedule</text></g>
+    <path d="M338 345h-75" stroke="#60c9dc" stroke-width="3" marker-end="url(#arrow)"/>
+    <g transform="translate(48 280)"><rect width="205" height="130" rx="15" fill="#132e58" stroke="#3569ad"/><text x="102" y="45" fill="#fff" font-size="21" font-weight="700">Checkpoint</text><text x="102" y="75" fill="#fff" font-size="21" font-weight="700">+ generation</text><text x="102" y="102" fill="#9fb7d8" font-size="15">quality checks</text></g>
+  </g>
+  <rect x="48" y="455" width="905" height="42" rx="10" fill="#0b203e" stroke="#244c78"/>
+  <text x="500" y="482" text-anchor="middle" fill="#b9cceb" font-family="monospace" font-size="15">MEASURE → COMPARE → CHANGE ONE VARIABLE → REPEAT</text>
+</svg>

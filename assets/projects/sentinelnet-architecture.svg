@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 560" role="img" aria-labelledby="title desc">
+  <title id="title">SentinelNet event-driven cloud architecture</title>
+  <desc id="desc">Wazuh alerts are buffered by Amazon SQS, transformed by Python AWS Lambda, persisted in DynamoDB, and exposed through an API and dashboard.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1"><stop stop-color="#10254a"/><stop offset="1" stop-color="#08152c"/></linearGradient>
+    <marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0l8 4-8 4z" fill="#65cfe2"/></marker>
+  </defs>
+  <rect width="1000" height="560" rx="28" fill="url(#bg)"/>
+  <text x="48" y="60" fill="#7dd3e1" font-family="monospace" font-size="18" letter-spacing="3">EVENT PIPELINE / SENTINELNET</text>
+  <g font-family="Arial, sans-serif" text-anchor="middle">
+    <g transform="translate(45 130)"><rect width="180" height="110" rx="16" fill="#132e58" stroke="#3569ad"/><text x="90" y="50" fill="#fff" font-size="25" font-weight="700">Wazuh</text><text x="90" y="78" fill="#9fb7d8" font-size="15">security alerts</text></g>
+    <path d="M225 185h65" stroke="#65cfe2" stroke-width="3" marker-end="url(#arrow)"/>
+    <g transform="translate(300 130)"><rect width="180" height="110" rx="16" fill="#173a70" stroke="#42b7dc" stroke-width="2"/><text x="90" y="50" fill="#fff" font-size="25" font-weight="700">SQS</text><text x="90" y="78" fill="#b9d2f4" font-size="15">buffer + decouple</text></g>
+    <path d="M480 185h65" stroke="#65cfe2" stroke-width="3" marker-end="url(#arrow)"/>
+    <g transform="translate(555 130)"><rect width="180" height="110" rx="16" fill="#132e58" stroke="#3569ad"/><text x="90" y="44" fill="#fff" font-size="23" font-weight="700">Python</text><text x="90" y="71" fill="#fff" font-size="23" font-weight="700">Lambda</text><text x="90" y="94" fill="#9fb7d8" font-size="14">normalize events</text></g>
+    <path d="M735 185h65" stroke="#65cfe2" stroke-width="3" marker-end="url(#arrow)"/>
+    <g transform="translate(810 130)"><rect width="145" height="110" rx="16" fill="#132e58" stroke="#3569ad"/><text x="72" y="50" fill="#fff" font-size="22" font-weight="700">DynamoDB</text><text x="72" y="78" fill="#9fb7d8" font-size="15">persistence</text></g>
+    <path d="M882 240v74" stroke="#65cfe2" stroke-width="3" marker-end="url(#arrow)"/>
+    <g transform="translate(715 324)"><rect width="240" height="105" rx="16" fill="#132e58" stroke="#3569ad"/><text x="120" y="45" fill="#fff" font-size="23" font-weight="700">REST API</text><text x="120" y="75" fill="#9fb7d8" font-size="15">authorized access</text></g>
+    <path d="M715 376H590" stroke="#65cfe2" stroke-width="3" marker-end="url(#arrow)"/>
+    <g transform="translate(330 324)"><rect width="250" height="105" rx="16" fill="#132e58" stroke="#3569ad"/><text x="125" y="45" fill="#fff" font-size="23" font-weight="700">Triage dashboard</text><text x="125" y="75" fill="#9fb7d8" font-size="15">analyst workflow</text></g>
+  </g>
+  <g font-family="monospace" font-size="15"><rect x="45" y="475" width="910" height="42" rx="10" fill="#0b203e" stroke="#244c78"/><text x="500" y="502" fill="#b9cceb" text-anchor="middle">AWS CDK · KMS encryption · Cognito · RBAC</text></g>
+</svg>
