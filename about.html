@@ -10,7 +10,7 @@
   <meta name="theme-color" content="#0b1730">
   <meta property="og:type" content="profile">
   <meta property="og:title" content="About Josh Martino | Software, AI/ML &amp; Autonomous Systems">
-  <meta property="og:description" content="Engineering philosophy, education, and technical toolkit across models, software, cloud, and robotics.">
+  <meta property="og:description" content="Josh Martino's background, education, and technical toolkit across models, software, cloud, and robotics.">
   <meta property="og:url" content="https://martinojosh15.github.io/JoshMartinoPortfolio/about.html">
   <meta name="twitter:card" content="summary">
   <!-- TODO: Add og:image and twitter:image after assets/social-preview.png is approved. -->
@@ -36,13 +36,12 @@
   <a class="skip-link" href="#main">Skip to main content</a>
   <header>
     <div class="wrap site-nav">
-      <a class="brand" href="index.html" aria-label="Josh Martino, home"><span class="brand-mark" aria-hidden="true">JM</span>Josh Martino</a>
+      <a class="brand" href="index.html" aria-label="Josh Martino, home">Josh Martino</a>
       <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-nav">Menu</button>
       <nav id="primary-nav" aria-label="Primary navigation">
         <ul>
-          <li><a href="index.html">Home</a></li><li><a href="projects.html">Work</a></li><li><a href="activities.html">Experience</a></li>
-          <li><span class="nav-disabled" aria-disabled="true" title="Articles are in review">Writing</span></li>
-          <li><a href="about.html" aria-current="page">About</a></li><li><a href="contact.html">Contact</a></li><li><a href="assets/Josh_Martino_SWE_AI_Resume.pdf">Resume</a></li>
+          <li><a href="projects.html">Work</a></li><li><a href="activities.html">Experience</a></li>
+          <li><a href="about.html" aria-current="page">About</a></li><li><a href="contact.html">Contact</a></li><li><a class="nav-resume" href="assets/Josh_Martino_SWE_AI_Resume.pdf">Resume</a></li>
         </ul>
       </nav>
     </div>
@@ -53,8 +52,8 @@
       <section class="page-hero" aria-labelledby="about-title">
         <article class="panel page-hero-copy reveal">
           <p class="eyebrow">About</p>
-          <h1 id="about-title">I like understanding systems all the way down.</h1>
-          <p class="lead">My best work sits where machine learning, software engineering, and physical systems meet. I want to understand why a model behaves as it does, how data reaches it, and what makes the surrounding software reliable enough to use.</p>
+          <h1 id="about-title">I like understanding how the whole system works.</h1>
+          <p class="lead">I work across machine learning, software engineering, and autonomous systems. The common thread is wanting to understand what happens beneath the API and how the surrounding software behaves in practice.</p>
           <div class="button-row"><a class="btn" href="assets/Josh_Martino_SWE_AI_Resume.pdf" download="Josh_Martino_Resume.pdf">Download Resume</a><a class="btn-secondary" href="contact.html">Start a conversation</a></div>
         </article>
         <aside class="panel page-hero-aside reveal reveal-delay-1">
@@ -69,13 +68,13 @@
         </aside>
       </section>
 
-      <section aria-labelledby="philosophy-title">
-        <div class="section-heading"><div><p class="eyebrow">Engineering philosophy</p><h2 id="philosophy-title">Models, infrastructure, and real-world behavior belong in the same conversation.</h2></div></div>
-        <div class="grid-2">
-          <article class="card philosophy-card reveal"><span class="section-index">01 / FIRST PRINCIPLES</span><h3>Learn by building the mechanism</h3><p class="muted">Reimplementing GPT-2 and reverse-mode automatic differentiation made the math and framework abstractions concrete. I use that depth to debug with a better mental model.</p></article>
-          <article class="card philosophy-card reveal reveal-delay-1"><span class="section-index">02 / COMPLETE SYSTEMS</span><h3>Care about what surrounds the model</h3><p class="muted">Training code, sensor timing, queues, APIs, persistence, observability, and user workflows determine whether an intelligent feature becomes a dependable system.</p></article>
-          <article class="card philosophy-card reveal"><span class="section-index">03 / PHYSICAL CONTEXT</span><h3>Connect ML to the real world</h3><p class="muted">Autonomous-vehicle research turns abstract model work into integration constraints: incomplete sensor data, localization health, networked services, and operators who need useful evidence.</p></article>
-          <article class="card philosophy-card reveal reveal-delay-1"><span class="section-index">04 / EVIDENCE</span><h3>Debug, measure, iterate</h3><p class="muted">I prefer a traceable experiment and an honest limitation over a vague claim. Reliability comes from observing the system, isolating variables, and improving it deliberately.</p></article>
+      <section class="about-story reveal" aria-labelledby="story-title">
+        <p class="eyebrow">How I got here</p>
+        <h2 id="story-title">From model internals to physical systems</h2>
+        <div class="prose-columns">
+          <p>I got interested in AI because I wanted to understand what the libraries were doing for me. That led from implementing reverse-mode automatic differentiation to rebuilding GPT-2 in PyTorch and working on a CUDA-accelerated training pipeline.</p>
+          <p>JACart pushed that interest into a physical system. I have worked across ROS 2, LiDAR, cameras, localization, Docker networking, and multimodal inference. Debugging a real vehicle means checking timing, transforms, services, and hardware together instead of treating the model as an isolated component.</p>
+          <p>I enjoy projects where software, AI, and systems overlap, especially when there is a concrete engineering problem to trace and solve. Teaching Python and helping lead technical communities at JMU have also made clear communication a regular part of how I work.</p>
         </div>
       </section>
 
@@ -97,7 +96,7 @@
       </section>
 
       <section aria-labelledby="stack-title">
-        <div class="section-heading"><div><p class="eyebrow">Technical toolkit</p><h2 id="stack-title">Tools organized by the systems they help me build.</h2></div><p class="lead">A practical stack developed through model implementation, research integration, cloud infrastructure, and product work.</p></div>
+        <div class="section-heading"><div><p class="eyebrow">Technical toolkit</p><h2 id="stack-title">Tools I use across models, robotics, and software</h2></div></div>
         <div class="stack-groups">
           <article class="stack-group"><h3>Languages</h3><p>Python · Java · JavaScript · SQL</p></article>
           <article class="stack-group"><h3>AI / ML</h3><p>PyTorch · CUDA GPU training · TensorFlow / Keras · scikit-learn · Transformers · LLM/VLM systems · Computer Vision · Pandas · NumPy</p></article>
@@ -110,7 +109,7 @@
     </div>
   </main>
 
-  <footer><div class="wrap footer-content"><div><p><strong>Josh Martino</strong> · Software Engineering · AI/ML · Autonomous Systems</p><p>Available for full-time roles beginning May 2027.</p></div><div class="footer-links"><a href="mailto:marti7jt@dukes.jmu.edu">Email</a><a href="https://github.com/MartinoJosh15" target="_blank" rel="noopener noreferrer">GitHub</a><a href="https://www.linkedin.com/in/joshua-martino-748078317/" target="_blank" rel="noopener noreferrer">LinkedIn</a><a href="assets/Josh_Martino_SWE_AI_Resume.pdf">Resume</a></div></div></footer>
+  <footer><div class="wrap footer-content"><p>Josh Martino © 2026</p><div class="footer-links"><a href="mailto:marti7jt@dukes.jmu.edu">Email</a><a href="https://github.com/MartinoJosh15" target="_blank" rel="noopener noreferrer">GitHub</a><a href="https://www.linkedin.com/in/joshua-martino-748078317/" target="_blank" rel="noopener noreferrer">LinkedIn</a><a href="assets/Josh_Martino_SWE_AI_Resume.pdf">Resume</a></div></div></footer>
   <script src="script.js" defer></script>
 </body>
 </html>

@@ -48,17 +48,15 @@
   <a class="skip-link" href="#main">Skip to main content</a>
   <header>
     <div class="wrap site-nav">
-      <a class="brand" href="index.html" aria-label="Josh Martino, home"><span class="brand-mark" aria-hidden="true">JM</span>Josh Martino</a>
+      <a class="brand" href="index.html" aria-label="Josh Martino, home" aria-current="page">Josh Martino</a>
       <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-nav">Menu</button>
       <nav id="primary-nav" aria-label="Primary navigation">
         <ul>
-          <li><a href="index.html" aria-current="page">Home</a></li>
           <li><a href="projects.html">Work</a></li>
           <li><a href="activities.html">Experience</a></li>
-          <li><span class="nav-disabled" aria-disabled="true" title="Articles are in review">Writing</span></li>
           <li><a href="about.html">About</a></li>
           <li><a href="contact.html">Contact</a></li>
-          <li><a href="assets/Josh_Martino_SWE_AI_Resume.pdf">Resume</a></li>
+          <li><a class="nav-resume" href="assets/Josh_Martino_SWE_AI_Resume.pdf">Resume</a></li>
         </ul>
       </nav>
     </div>
@@ -72,32 +70,29 @@
             <span class="badge">Software Engineering · AI/ML · Autonomous Systems</span>
             <p class="eyebrow">Engineer / Researcher / Builder</p>
             <h1 id="hero-title">I build AI systems from GPU-accelerated transformers to autonomous vehicles.</h1>
-            <p class="lead">I'm Josh Martino, a software engineer and undergraduate researcher at James Madison University graduating in May 2027. My work spans PyTorch and CUDA model training, ROS 2 autonomous systems, multimodal AI, and cloud-backed software—from reimplementing GPT-2 to developing anomaly detection for an autonomous vehicle.</p>
+            <p class="lead">I'm Josh Martino, a software engineer and undergraduate researcher at James Madison University graduating in May 2027. I work across PyTorch and CUDA training, ROS 2 autonomous systems, multimodal AI, and cloud-backed software.</p>
             <p class="availability">May 2027 · Open to full-time Software Engineering, AI/ML, and Autonomous Systems roles</p>
             <div class="hero-actions">
-              <a class="btn" href="#flagship-work">View Case Studies</a>
-              <a class="btn-secondary" href="assets/Josh_Martino_SWE_AI_Resume.pdf" download="Josh_Martino_Resume.pdf">Download Resume</a>
-              <a class="btn-ghost" href="https://github.com/MartinoJosh15" target="_blank" rel="noopener noreferrer">GitHub</a>
-              <a class="btn-ghost" href="https://www.linkedin.com/in/joshua-martino-748078317/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+              <a class="btn" href="#flagship-work">View My Work</a>
+              <a class="btn-secondary" href="assets/Josh_Martino_SWE_AI_Resume.pdf" download="Josh_Martino_Resume.pdf">Resume</a>
             </div>
+            <div class="hero-text-links"><a href="https://github.com/MartinoJosh15" target="_blank" rel="noopener noreferrer">GitHub</a><a href="https://www.linkedin.com/in/joshua-martino-748078317/" target="_blank" rel="noopener noreferrer">LinkedIn</a></div>
           </div>
 
-          <aside class="telemetry-panel reveal reveal-delay-1" aria-label="Engineering focus areas">
-            <div class="telemetry-top">
-              <span class="telemetry-label">system.profile</span>
-              <span class="telemetry-live">Available 05.2027</span>
-            </div>
-            <ol class="system-stack">
-              <li><span class="stack-index">01</span><span><strong>Model internals</strong><span>Transformers, autodiff, training</span></span></li>
-              <li><span class="stack-index">02</span><span><strong>Systems integration</strong><span>ROS 2, sensors, localization</span></span></li>
-              <li><span class="stack-index">03</span><span><strong>Production software</strong><span>AWS, APIs, event pipelines</span></span></li>
-              <li><span class="stack-index">04</span><span><strong>Measurement</strong><span>Debug, validate, iterate</span></span></li>
-            </ol>
+          <aside class="focus-panel reveal reveal-delay-1" aria-label="Engineering focus areas">
+            <p class="eyebrow">Selected systems</p>
+            <h2>Work across model code, vehicles, and cloud backends</h2>
+            <ul class="focus-list">
+              <li><strong>GPT-2 reimplementation</strong><span>PyTorch internals and CUDA training</span></li>
+              <li><strong>JACart autonomous vehicle</strong><span>ROS 2, sensors, localization, multimodal AI</span></li>
+              <li><strong>SentinelNet</strong><span>AWS security-alert ingestion and backend infrastructure</span></li>
+            </ul>
+            <!-- TODO(asset-jacart): Replace this panel with assets/projects/jacart-real-photo.* when an approved real cart photo is available. -->
           </aside>
         </div>
 
         <div class="evidence-strip reveal reveal-delay-2" aria-label="Technical evidence">
-          <div class="evidence-item"><strong>JACart / CCI</strong><span>Autonomous-vehicle research and technical leadership</span></div>
+          <div class="evidence-item"><strong>JACart</strong><span>Autonomous-vehicle research and technical leadership</span></div>
           <div class="evidence-item"><strong>GPT-2</strong><span>PyTorch + CUDA-accelerated GPU training</span></div>
           <div class="evidence-item"><strong>ROS 2</strong><span>LiDAR, cameras, localization, autonomy</span></div>
           <div class="evidence-item"><strong>Cloud systems</strong><span>AWS event-driven security pipelines</span></div>
@@ -108,9 +103,9 @@
         <div class="section-heading">
           <div>
             <p class="eyebrow">Flagship work</p>
-            <h2 id="work-title">Engineering case studies, not project blurbs.</h2>
+            <h2 id="work-title">Selected engineering work</h2>
           </div>
-          <p class="lead">Each case study covers system architecture, personal ownership, implementation decisions, tradeoffs, and only the results I can substantiate.</p>
+          <p class="lead">Detailed case studies on the model code, system integration, and backend work behind three projects.</p>
         </div>
 
         <div class="project-list">
@@ -121,10 +116,10 @@
             <div class="project-copy">
               <span class="badge">Transformer Engineering</span>
               <h3>GPT-2 Reimplementation &amp; GPU Training Optimization</h3>
-              <p class="project-role">Role: Independent ML engineer</p>
+              <p class="project-role">Independent ML project</p>
               <p>Rebuilt the model path in PyTorch and developed a CUDA-accelerated training loop focused on stability, memory efficiency, and inspectable behavior.</p>
               <div class="tag-row"><span class="tag">PyTorch</span><span class="tag">CUDA</span><span class="tag">Transformers</span><span class="tag">Mixed Precision</span><span class="tag">NLP</span></div>
-              <p class="proof"><strong>Proof:</strong> Implemented embeddings, causal self-attention, transformer blocks, weight tying, generation, and the optimization pipeline.</p>
+              <p class="project-note">Implemented embeddings, causal self-attention, transformer blocks, weight tying, generation, and the optimization pipeline.</p>
               <div class="card-links"><a class="text-link" href="projects/gpt2.html">Read case study</a></div>
             </div>
           </article>
@@ -136,10 +131,10 @@
             <div class="project-copy">
               <span class="badge">Autonomous Systems + Applied AI</span>
               <h3>JACart Autonomous Vehicle / Multimodal Anomaly Detection</h3>
-              <p class="project-role">Role: Project Manager &amp; Undergraduate Research Assistant</p>
+              <p class="project-role">Project Manager &amp; Undergraduate Research Assistant</p>
               <p>Integrated vehicle telemetry, localization health, and camera context into a monitoring workflow for abnormal operating conditions on JMU's autonomous research platform.</p>
               <div class="tag-row"><span class="tag">ROS 2</span><span class="tag">LiDAR</span><span class="tag">ZED</span><span class="tag">MOLA</span><span class="tag">Ollama</span></div>
-              <p class="proof"><strong>Verified system result:</strong> Helped stabilize Velodyne point-cloud processing at approximately 10 Hz.</p>
+              <p class="project-note">Helped stabilize Velodyne point-cloud processing at approximately 10 Hz.</p>
               <div class="card-links"><a class="text-link" href="projects/jacart.html">Read case study</a></div>
             </div>
           </article>
@@ -151,45 +146,22 @@
             <div class="project-copy">
               <span class="badge">Cloud + Security Telemetry</span>
               <h3>SentinelNet</h3>
-              <p class="project-role">Role: Cloud/backend engineer</p>
-              <p>Built an event-driven AWS pipeline that decouples alert ingestion, transforms Wazuh events, persists normalized records, and supports an authorized triage interface.</p>
+              <p class="project-role">Team project · Backend and cloud contributions</p>
+              <p>My contributions focused on the alert-ingestion pipeline, Python Lambda processing, DynamoDB persistence, infrastructure as code, and backend security integration.</p>
               <div class="tag-row"><span class="tag">Python</span><span class="tag">AWS CDK</span><span class="tag">Lambda</span><span class="tag">SQS</span><span class="tag">DynamoDB</span></div>
-              <p class="proof"><strong>Validated scale:</strong> End-to-end processing tested against hundreds of security alerts.</p>
-              <div class="card-links"><a class="text-link" href="projects/sentinelnet.html">Read case study</a><a class="text-link" href="https://github.com/wjed/sentinel" target="_blank" rel="noopener noreferrer">View source</a></div>
+              <p class="project-note">End-to-end processing was tested against hundreds of security alerts.</p>
+              <div class="card-links"><a class="text-link" href="projects/sentinelnet.html">Read case study</a><a class="text-link" href="https://github.com/wjed/sentinel" target="_blank" rel="noopener noreferrer">Team Repository</a></div>
             </div>
           </article>
         </div>
       </section>
-
-      <section aria-labelledby="approach-title">
-        <div class="section-heading">
-          <div><p class="eyebrow">Engineering approach</p><h2 id="approach-title">The model is only one component.</h2></div>
-        </div>
-        <div class="grid-3">
-          <article class="card philosophy-card reveal"><span class="section-index">01 / FIRST PRINCIPLES</span><h3>Understand the mechanism</h3><p class="muted">I implement core ideas—such as reverse-mode autodiff and transformer blocks—when doing so reveals what a framework normally hides.</p></article>
-          <article class="card philosophy-card reveal reveal-delay-1"><span class="section-index">02 / SYSTEMS</span><h3>Trace the whole data path</h3><p class="muted">Sensors, queues, models, storage, APIs, and operator interfaces are connected reliability problems, not isolated features.</p></article>
-          <article class="card philosophy-card reveal reveal-delay-2"><span class="section-index">03 / ITERATION</span><h3>Measure before claiming</h3><p class="muted">I value reproducible tests, observable behavior, careful debugging, and metrics tied to the actual constraint being improved.</p></article>
-        </div>
-      </section>
-
-      <section aria-labelledby="research-title">
-        <div class="panel reveal">
-          <p class="eyebrow">Research &amp; recognition</p>
-          <h2 id="research-title">Applied research in a statewide cybersecurity ecosystem.</h2>
-          <p class="lead">JACart research operates at the intersection of autonomy, AI, and cybersecurity. James Madison University documents its participation in the Commonwealth Cyber Initiative, a statewide research network focused on secure cyber-physical systems.</p>
-          <div class="button-row">
-            <a class="btn-secondary" href="https://www.jmu.edu/news/research/2020/06-04-cci-research-workshop.shtml" target="_blank" rel="noopener noreferrer">JMU + CCI context</a>
-            <a class="btn-ghost" href="activities.html">View research experience</a>
-          </div>
-          <!-- TODO: Add the exact public URL documenting the JACart team demonstration and recognition naming Joshua Martino once verified. -->
-        </div>
-      </section>
+      <!-- TODO(recognition): Restore a recognition section only when a direct source names the JACart project or team. -->
     </div>
   </main>
 
   <footer>
     <div class="wrap footer-content">
-      <div><p><strong>Josh Martino</strong> · Software Engineering · AI/ML · Autonomous Systems</p><p>Available for full-time roles beginning May 2027.</p></div>
+      <p>Josh Martino © 2026</p>
       <div class="footer-links">
         <a href="mailto:marti7jt@dukes.jmu.edu">Email</a>
         <a href="https://github.com/MartinoJosh15" target="_blank" rel="noopener noreferrer">GitHub</a>

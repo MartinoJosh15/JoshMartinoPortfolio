@@ -62,24 +62,6 @@ if (revealItems.length && !prefersReducedMotion && 'IntersectionObserver' in win
   revealItems.forEach((item) => item.classList.add('is-visible'));
 }
 
-let scrollFrameRequested = false;
-
-const setProgress = () => {
-  const scrollable = document.documentElement.scrollHeight - window.innerHeight;
-  const progress = scrollable > 0 ? (window.scrollY / scrollable) * 100 : 0;
-  document.documentElement.style.setProperty('--scroll-progress', `${Math.min(progress, 100)}%`);
-  scrollFrameRequested = false;
-};
-
-window.addEventListener('scroll', () => {
-  if (!scrollFrameRequested) {
-    window.requestAnimationFrame(setProgress);
-    scrollFrameRequested = true;
-  }
-}, { passive: true });
-
-setProgress();
-
 const copyEmailButton = document.querySelector('[data-copy-email]');
 const copyStatus = document.querySelector('.copy-status');
 
