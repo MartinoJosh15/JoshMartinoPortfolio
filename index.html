@@ -7,14 +7,15 @@
   <meta name="description" content="Josh Martino builds software, AI/ML, and autonomous systems—from CUDA-accelerated GPT-2 training to ROS 2 vehicle research and event-driven AWS platforms.">
   <link rel="canonical" href="https://martinojosh15.github.io/JoshMartinoPortfolio/">
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
-  <meta name="theme-color" content="#0b1730">
+  <meta name="theme-color" content="#f5f6fa">
   <meta property="og:type" content="profile">
   <meta property="og:title" content="Josh Martino | Software Engineer — AI/ML &amp; Autonomous Systems">
   <meta property="og:description" content="Engineering case studies across GPU-accelerated transformers, autonomous vehicles, and cloud systems.">
   <meta property="og:url" content="https://martinojosh15.github.io/JoshMartinoPortfolio/">
   <meta name="twitter:card" content="summary">
   <!-- TODO: Add a verified 1200x630 social preview at assets/social-preview.png, then add og:image and twitter:image. -->
-  <link rel="stylesheet" href="styles-v2.css">
+  <script src="theme-init.js"></script>
+  <link rel="stylesheet" href="styles-premium.css">
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -44,132 +45,28 @@
   }
   </script>
 </head>
-<body>
-  <a class="skip-link" href="#main">Skip to main content</a>
-  <header>
-    <div class="wrap site-nav">
-      <a class="brand" href="index.html" aria-label="Josh Martino, home" aria-current="page">Josh Martino</a>
-      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-nav">Menu</button>
-      <nav id="primary-nav" aria-label="Primary navigation">
-        <ul>
-          <li><a href="projects.html">Work</a></li>
-          <li><a href="activities.html">Experience</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="contact.html">Contact</a></li>
-          <li><a class="nav-resume" href="assets/Josh_Martino_SWE_AI_Resume.pdf">Resume</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
-
-  <main id="main">
-    <div class="wrap">
-      <section aria-labelledby="hero-title">
-        <div class="hero-layout">
-          <div class="hero-copy reveal">
-            <span class="badge">Software Engineering · AI/ML · Autonomous Systems</span>
-            <p class="eyebrow">Engineer / Researcher / Builder</p>
-            <h1 id="hero-title">I build AI systems from GPU-accelerated transformers to autonomous vehicles.</h1>
-            <p class="lead">I'm Josh Martino, a software engineer and undergraduate researcher at James Madison University graduating in May 2027. I work across PyTorch and CUDA training, ROS 2 autonomous systems, multimodal AI, and cloud-backed software.</p>
-            <p class="availability">May 2027 · Open to full-time Software Engineering, AI/ML, and Autonomous Systems roles</p>
-            <div class="hero-actions">
-              <a class="btn" href="#flagship-work">View My Work</a>
-              <a class="btn-secondary" href="assets/Josh_Martino_SWE_AI_Resume.pdf" download="Josh_Martino_Resume.pdf">Resume</a>
-            </div>
-            <div class="hero-text-links"><a href="https://github.com/MartinoJosh15" target="_blank" rel="noopener noreferrer">GitHub</a><a href="https://www.linkedin.com/in/joshua-martino-748078317/" target="_blank" rel="noopener noreferrer">LinkedIn</a></div>
-          </div>
-
-          <aside class="focus-panel reveal reveal-delay-1" aria-label="Engineering focus areas">
-            <p class="eyebrow">Selected systems</p>
-            <h2>Work across model code, vehicles, and cloud backends</h2>
-            <ul class="focus-list">
-              <li><strong>GPT-2 reimplementation</strong><span>PyTorch internals and CUDA training</span></li>
-              <li><strong>JACart autonomous vehicle</strong><span>ROS 2, sensors, localization, multimodal AI</span></li>
-              <li><strong>SentinelNet</strong><span>AWS security-alert ingestion and backend infrastructure</span></li>
-            </ul>
-            <!-- TODO(asset-jacart): Replace this panel with assets/projects/jacart-real-photo.* when an approved real cart photo is available. -->
-          </aside>
-        </div>
-
-        <div class="evidence-strip reveal reveal-delay-2" aria-label="Technical evidence">
-          <div class="evidence-item"><strong>JACart</strong><span>Autonomous-vehicle research and technical leadership</span></div>
-          <div class="evidence-item"><strong>GPT-2</strong><span>PyTorch + CUDA-accelerated GPU training</span></div>
-          <div class="evidence-item"><strong>ROS 2</strong><span>LiDAR, cameras, localization, autonomy</span></div>
-          <div class="evidence-item"><strong>Cloud systems</strong><span>AWS event-driven security pipelines</span></div>
-        </div>
-      </section>
-
-      <section id="flagship-work" aria-labelledby="work-title">
-        <div class="section-heading">
-          <div>
-            <p class="eyebrow">Flagship work</p>
-            <h2 id="work-title">Selected engineering work</h2>
-          </div>
-          <p class="lead">Detailed case studies on the model code, system integration, and backend work behind three projects.</p>
-        </div>
-
-        <div class="project-list">
-          <article class="project-card reveal">
-            <div class="project-visual">
-              <img src="assets/projects/gpt2-architecture.svg" width="1000" height="620" loading="lazy" decoding="async" alt="GPT-2 flow from tokens and embeddings through transformer blocks, causal self-attention, a language-model head, and autoregressive generation">
-            </div>
-            <div class="project-copy">
-              <span class="badge">Transformer Engineering</span>
-              <h3>GPT-2 Reimplementation &amp; GPU Training Optimization</h3>
-              <p class="project-role">Independent ML project</p>
-              <p>Rebuilt the model path in PyTorch and developed a CUDA-accelerated training loop focused on stability, memory efficiency, and inspectable behavior.</p>
-              <div class="tag-row"><span class="tag">PyTorch</span><span class="tag">CUDA</span><span class="tag">Transformers</span><span class="tag">Mixed Precision</span><span class="tag">NLP</span></div>
-              <p class="project-note">Implemented embeddings, causal self-attention, transformer blocks, weight tying, generation, and the optimization pipeline.</p>
-              <div class="card-links"><a class="text-link" href="projects/gpt2.html">Read case study</a></div>
-            </div>
-          </article>
-
-          <article class="project-card reveal">
-            <div class="project-visual">
-              <img src="assets/projects/jacart-architecture.svg" width="1000" height="700" loading="lazy" decoding="async" alt="JACart sensor, ROS 2, MOLA localization, vehicle-state, multimodal anomaly-detection, and local model workflow">
-            </div>
-            <div class="project-copy">
-              <span class="badge">Autonomous Systems + Applied AI</span>
-              <h3>JACart Autonomous Vehicle / Multimodal Anomaly Detection</h3>
-              <p class="project-role">Project Manager &amp; Undergraduate Research Assistant</p>
-              <p>Integrated vehicle telemetry, localization health, and camera context into a monitoring workflow for abnormal operating conditions on JMU's autonomous research platform.</p>
-              <div class="tag-row"><span class="tag">ROS 2</span><span class="tag">LiDAR</span><span class="tag">ZED</span><span class="tag">MOLA</span><span class="tag">Ollama</span></div>
-              <p class="project-note">Helped stabilize Velodyne point-cloud processing at approximately 10 Hz.</p>
-              <div class="card-links"><a class="text-link" href="projects/jacart.html">Read case study</a></div>
-            </div>
-          </article>
-
-          <article class="project-card reveal">
-            <div class="project-visual">
-              <img src="assets/projects/sentinelnet-architecture.svg" width="1000" height="560" loading="lazy" decoding="async" alt="SentinelNet event pipeline from Wazuh through Amazon SQS, Python Lambda, DynamoDB, a REST API, and dashboard">
-            </div>
-            <div class="project-copy">
-              <span class="badge">Cloud + Security Telemetry</span>
-              <h3>SentinelNet</h3>
-              <p class="project-role">Team project · Backend and cloud contributions</p>
-              <p>My contributions focused on the alert-ingestion pipeline, Python Lambda processing, DynamoDB persistence, infrastructure as code, and backend security integration.</p>
-              <div class="tag-row"><span class="tag">Python</span><span class="tag">AWS CDK</span><span class="tag">Lambda</span><span class="tag">SQS</span><span class="tag">DynamoDB</span></div>
-              <p class="project-note">End-to-end processing was tested against hundreds of security alerts.</p>
-              <div class="card-links"><a class="text-link" href="projects/sentinelnet.html">Read case study</a><a class="text-link" href="https://github.com/wjed/sentinel" target="_blank" rel="noopener noreferrer">Team Repository</a></div>
-            </div>
-          </article>
-        </div>
-      </section>
-      <!-- TODO(recognition): Restore a recognition section only when a direct source names the JACart project or team. -->
-    </div>
-  </main>
-
-  <footer>
-    <div class="wrap footer-content">
-      <p>Josh Martino © 2026</p>
-      <div class="footer-links">
-        <a href="mailto:marti7jt@dukes.jmu.edu">Email</a>
-        <a href="https://github.com/MartinoJosh15" target="_blank" rel="noopener noreferrer">GitHub</a>
-        <a href="https://www.linkedin.com/in/joshua-martino-748078317/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-        <a href="assets/Josh_Martino_SWE_AI_Resume.pdf">Resume</a>
-      </div>
-    </div>
-  </footer>
-  <script src="script.js" defer></script>
-</body>
-</html>
+<body class="home-page">
+<a class="skip-link" href="#main">Skip to main content</a><header class="site-header"><div class="wrap site-nav">
+      <a class="brand" href="index.html" aria-label="Josh Martino, home"><span class="brand-mark" aria-hidden="true">jm<span>®</span></span><span>Josh Martino<span class="brand-sub">Software engineer &amp; researcher</span></span></a>
+      <div class="nav-controls"><button class="theme-toggle" type="button" aria-label="Switch to dark theme" title="Switch theme"><svg viewBox="0 0 24 24" width="19" height="19" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M20 15.1A8.5 8.5 0 0 1 8.9 4a8.5 8.5 0 1 0 11.1 11.1Z"/></svg></button><button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-nav">Menu <span aria-hidden="true">+</span></button></div>
+      <nav id="primary-nav" aria-label="Primary navigation"><ul><li><a href="projects.html">Work</a></li><li><a href="activities.html">Experience</a></li><li><a href="about.html">About</a></li><li><a href="contact.html">Contact</a></li><li><a class="nav-resume" href="assets/Josh_Martino_SWE_AI_Resume.pdf" target="_blank" rel="noopener">Résumé <span aria-hidden="true">↗</span></a></li></ul></nav>
+    </div></header>
+<main id="main"><div class="wrap">
+  <section class="editorial-hero" aria-labelledby="hero-title">
+    <div class="intro-copy"><p class="eyebrow"><span class="status-dot"></span> SOFTWARE ENGINEER &amp; RESEARCHER</p><h1 id="hero-title">Intelligence,<br>built from the<br><span class="hero-last">ground up<span class="accent-dot">.</span></span></h1><p class="hero-description">I’m Josh. I build at the intersection of machine learning, autonomous systems, and software that works in the real world.</p><div class="hero-actions"><a class="btn" href="#flagship-work">Explore my work <span aria-hidden="true">↘</span></a><a class="hero-secondary" href="about.html">A little about me <span aria-hidden="true">↗</span></a></div><div class="availability"><span class="status-dot"></span> Open to full-time roles · May 2027</div></div>
+    <div class="hero-art"><div class="art-topline"><span>EXPLORING THE CONNECTIONS</span><span>FIG. 01</span></div><div class="neural-object"><canvas id="neural-canvas" aria-hidden="true"></canvas><div class="orbit-label orbit-label-top"><span class="status-dot"></span> Model → system</div><div class="orbit-label orbit-label-bottom"><span class="crosshair">+</span> Code meets the real world</div></div><div class="art-caption"><span class="crosshair">+</span><p>From first principles.<br><strong>To real-world systems.</strong></p><button class="motion-toggle" type="button" aria-label="Pause visualization" title="Pause visualization"><span aria-hidden="true">Ⅱ</span></button></div></div>
+  </section>
+  <div class="discipline-strip" aria-label="Engineering disciplines"><span class="strip-label">THREE LENSES.<br>ONE SYSTEMS MINDSET.</span><span><b>01</b> Machine learning <i aria-hidden="true">↗</i></span><span><b>02</b> Autonomous systems <i aria-hidden="true">↗</i></span><span><b>03</b> Cloud &amp; software <i aria-hidden="true">↗</i></span></div>
+  <section id="flagship-work" class="selected-work" aria-labelledby="work-title"><div class="section-heading"><div><p class="eyebrow">SELECTED WORK / 01—03</p><h2 id="work-title">A few things I’ve built<span class="accent-dot">.</span></h2></div><a class="text-link" href="projects.html">All projects <span aria-hidden="true">↗</span></a></div><div class="work-toolbar"><div class="project-filters" role="group" aria-label="Filter projects"><button class="filter-button is-active" data-filter="all" aria-pressed="true">All work <span>03</span></button><button class="filter-button" data-filter="ai" aria-pressed="false">AI / ML</button><button class="filter-button" data-filter="robotics" aria-pressed="false">Autonomous systems</button><button class="filter-button" data-filter="cloud" aria-pressed="false">Cloud</button></div><span class="work-count" role="status" aria-live="polite">3 selected projects</span></div>
+<div class="work-grid" data-active-filter="all">
+  <article class="work-card featured-work" data-category="ai">
+    <div class="model-scene"><div class="scene-heading"><span><i class="live-dot"></i> MODEL ARCHITECTURE</span><span>GPT—2 / PYTORCH</span></div><div class="model-diagram" aria-hidden="true"><div class="token-row"><span>Building</span><span>what</span><span>comes</span><span class="predicted-token">next</span></div><div class="model-connectors"></div><div class="transformer-stack"><div class="model-layer layer-back">FEED-FORWARD</div><div class="model-layer layer-middle">CAUSAL SELF-ATTENTION</div><div class="model-layer layer-front"><span class="node-symbol">✳</span><span>Transformer block<small>Attention is where context becomes meaning.</small></span><span class="layer-arrow">↗</span></div></div><div class="output-line"><span></span> NEXT-TOKEN LOGITS <span></span></div></div><div class="model-explorer"><span class="explorer-label">EXPLORE THE MODEL</span><div class="stage-buttons" role="group" aria-label="Explore model architecture"><button data-stage="0" aria-pressed="true">01 <span>Embed</span></button><button data-stage="1" aria-pressed="false">02 <span>Attend</span></button><button data-stage="2" aria-pressed="false">03 <span>Predict</span></button></div><p class="stage-description" aria-live="polite">Token and positional embeddings turn a sequence into a representation the model can learn from.</p></div></div>
+    <div class="work-card-copy"><div class="card-meta"><span>01 / MACHINE LEARNING</span><span>Independent build</span></div><h3><a href="projects/gpt2.html">GPT-2, from the inside out.<span class="card-arrow" aria-hidden="true">↗</span></a></h3><p>A transformer built in PyTorch. A training pipeline shaped around the realities of GPU memory and compute.</p><div class="card-bottom"><div class="tag-row"><span class="tag">PyTorch</span><span class="tag">CUDA</span><span class="tag">Transformers</span></div><a class="case-link" href="projects/gpt2.html">Read case study <span aria-hidden="true">↗</span></a></div></div>
+  </article>
+  <article class="work-card compact-work jacart-work" data-category="robotics"><div class="jacart-scene" aria-hidden="true"><div class="scene-heading"><span><i class="live-dot"></i> PERCEPTION → LOCALIZATION</span><span>ROS 2</span></div><svg class="lidar-art" viewBox="0 0 520 185" fill="none"><defs><pattern id="lidar-dots" width="13" height="13" patternUnits="userSpaceOnUse"><circle cx="2" cy="2" r="1" fill="#767881" opacity=".45"/></pattern></defs><rect width="520" height="185" fill="url(#lidar-dots)"/><g stroke="#6c6f80" opacity=".35"><path d="M0 175 260 52 520 175M0 130 260 8 520 130M80 185 260 100 440 185M150 185 260 133 370 185"/><path d="M80 0 440 185M0 0 390 185M440 0 80 185M520 0 130 185"/></g><g stroke="#a7baff"><ellipse cx="260" cy="105" rx="105" ry="48" stroke-dasharray="3 6" opacity=".5"/><ellipse cx="260" cy="105" rx="163" ry="73" stroke-dasharray="2 8" opacity=".3"/><path class="lidar-path" d="M50 160 170 105 260 105 355 61 470 61" stroke-width="2" stroke-dasharray="6 5"/></g><g fill="#a7baff"><circle cx="170" cy="105" r="4"/><circle cx="355" cy="61" r="4"/><circle cx="470" cy="61" r="4"/></g><path d="m237 103 23-12 25 12-24 13Z" fill="#9aa8ed"/><path d="m237 103 0 15 24 13v-15Z" fill="#6a77b9"/><path d="m261 116 24-13v15l-24 13Z" fill="#505b91"/><path d="m247 98 13-7 14 7-13 8Z" fill="#dbdff4"/><text x="325" y="157" fill="#a6a8b5" font-family="monospace" font-size="9" letter-spacing="1">SENSOR FUSION / CONCEPT VIEW</text></svg></div><div class="work-card-copy"><div class="card-meta"><span>02 / AUTONOMOUS SYSTEMS</span><span>JMU Research</span></div><h3><a href="projects/jacart.html">Intelligence in motion.<span class="card-arrow" aria-hidden="true">↗</span></a></h3><p>Connecting sensors, localization, and multimodal AI on JACart’s autonomous research platform.</p><div class="card-bottom"><div class="tag-row"><span class="tag">ROS 2</span><span class="tag">LiDAR</span><span class="tag">Multimodal AI</span></div><a class="case-link" href="projects/jacart.html" aria-label="Read JACart case study">Case study ↗</a></div></div></article>
+  <article class="work-card compact-work sentinel-work" data-category="cloud"><div class="cloud-scene" aria-hidden="true"><div class="scene-heading"><span>EVENT-DRIVEN BY DESIGN</span><span>AWS</span></div><div class="cloud-pipeline"><span class="pipeline-node">⌁<small>WAZUH</small></span><span class="pipeline-track"></span><span class="pipeline-node">≋<small>SQS</small></span><span class="pipeline-track"></span><span class="pipeline-node lambda-node">λ<small>LAMBDA</small></span><span class="pipeline-track"></span><span class="pipeline-node">▤<small>DYNAMODB</small></span></div></div><div class="work-card-copy"><div class="card-meta"><span>03 / CLOUD &amp; SECURITY</span><span>Team project</span></div><h3><a href="projects/sentinelnet.html">Signals into systems.<span class="card-arrow" aria-hidden="true">↗</span></a></h3><p>SentinelNet’s event-driven backend, turning security alerts into structured, queryable data.</p><div class="card-bottom"><div class="tag-row"><span class="tag">AWS</span><span class="tag">Python</span><span class="tag">IaC</span></div><a class="case-link" href="projects/sentinelnet.html" aria-label="Read SentinelNet case study">Case study ↗</a></div></div></article>
+</div></section>
+  <section class="about-preview" aria-labelledby="about-preview-title"><div class="about-intro"><p class="eyebrow">THE PERSON BEHIND THE PROJECTS</p><h2 id="about-preview-title">Curiosity is the<br>common thread.</h2><a class="text-link" href="about.html">More about me ↗</a></div><div class="about-detail"><p class="large-copy">I like knowing what happens beneath the API.</p><p>That curiosity has taken me from rebuilding transformer internals to debugging sensors on an autonomous vehicle. I’m studying Information Technology with a minor in Robotics at James Madison University, graduating in May 2027.</p><div class="about-facts"><div><span class="meta-label">RIGHT NOW</span><strong>Building &amp; researching at JMU</strong></div><div><span class="meta-label">MY APPROACH</span><strong>Understand. Build. Iterate.</strong></div></div></div></section>
+  <section class="experience-preview" aria-labelledby="experience-title"><div class="section-heading"><div><p class="eyebrow">LEARNING BY DOING</p><h2 id="experience-title">Beyond the code.</h2></div><a class="text-link" href="activities.html">Full experience ↗</a></div><a class="experience-row" href="projects/jacart.html"><span class="experience-year">2025 — PRESENT</span><div><h3>JACart / CCI Scholars</h3><p>Project Manager &amp; Undergraduate Research Assistant</p></div><span class="experience-org">James Madison University</span><span class="row-arrow" aria-hidden="true">↗</span></a><a class="experience-row" href="activities.html"><span class="experience-year">2024 — 2025</span><div><h3>Advanced Python Programming</h3><p>Teaching Assistant · Supporting 50+ students</p></div><span class="experience-org">James Madison University</span><span class="row-arrow" aria-hidden="true">↗</span></a></section>
+  <section class="contact-band" aria-labelledby="contact-heading"><div><p class="eyebrow"><span class="status-dot"></span> NEXT CHAPTER / MAY 2027</p><h2 id="contact-heading">Let’s build something<br>that matters<span>.</span></h2><p>Software engineering, AI/ML, and autonomous systems.<br>Good problems and thoughtful teams welcome.</p></div><a class="contact-orb" href="contact.html"><span aria-hidden="true">↗</span>Let’s talk</a><div class="contact-band-bottom"><a href="mailto:marti7jt@dukes.jmu.edu">marti7jt@dukes.jmu.edu ↗</a><a href="assets/Josh_Martino_SWE_AI_Resume.pdf" target="_blank" rel="noopener">View résumé ↗</a></div></section>
+</div></main><footer><div class="wrap footer-content"><a class="footer-brand" href="index.html">Josh Martino<span class="accent-dot">.</span></a><p>Thoughtfully built. Always evolving.<br><span>© 2026 Josh Martino</span></p><div class="footer-links"><a href="https://github.com/MartinoJosh15" target="_blank" rel="noopener noreferrer">GitHub ↗</a><a href="https://www.linkedin.com/in/joshua-martino-748078317/" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a><a href="mailto:marti7jt@dukes.jmu.edu">Email ↗</a></div><a class="back-top" href="#main" aria-label="Back to top">↑</a></div></footer><script src="script.js" defer></script></body></html>
